@@ -7,6 +7,7 @@ export const Title = styled.h2`
     margin-bottom: 10px;
     padding: 0 20px;
     max-width: 800px;
+    font-weight: 700;
 
     & span {
         color: ${ props => props.spanColor || '#000' }
