@@ -7,7 +7,7 @@ const WelcomeContainer = styled.section`
     max-width: 100%;
     padding: 50px 20px;
     height: max-content;
-    min-height: 500px;
+    min-height: 400px;
     position: relative;
     display: flex;
     flex-direction: column;
