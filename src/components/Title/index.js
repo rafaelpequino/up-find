@@ -5,4 +5,5 @@ export const Title = styled.h2`
     color: ${ props => props.color || '#000' };
     text-align: ${ props => props.align || 'center' };
     margin-bottom: 10px;
+    padding: 0 20px;
 `
