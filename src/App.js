@@ -1,6 +1,7 @@
 import './App.css';
 import Choose from './components/Choose';
 import Header from './components/Header';
+import { SimpleFooter } from './components/SimpleFooter';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         linkCadastro="#"
       />
       <Choose />
+      <SimpleFooter>Copyright © Plataforma UpFind - deu match</SimpleFooter>
     </div>
   );
 }
