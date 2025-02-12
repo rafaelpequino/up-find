@@ -31,14 +31,14 @@ const LinksContainer = styled.div`
 const LinkLogin = styled.a`
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
     transition: color 0.3s ease;
 `;
 
 const LinkCadastro = styled.a`
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
     transition: color 0.3s ease;
     padding: 8px 30px;
     border-radius: 15px;
