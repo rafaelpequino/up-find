@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 const HeaderContainer = styled.header`
     max-width: 100%;
-    padding: 10px 20px;
+    padding: 0 20px;
+    height: 80px;
     background-color: #121212;
     display: flex;
     align-items: center;
