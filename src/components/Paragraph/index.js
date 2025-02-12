@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Paragraph = styled.p`
-    font-size: 32px;
+    font-size: 16px;
     color: ${ props => props.color || '#000' };
-    text-align: ${ props => props.align || 'center' };
+    text-align: ${ props => props.align || 'left' };
+    font-size: ${ props => props.size || '16px' }; 
 `
