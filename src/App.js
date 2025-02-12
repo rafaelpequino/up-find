@@ -1,4 +1,5 @@
 import './App.css';
+import Choose from './components/Choose';
 import Header from './components/Header';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         linkLogin="#"
         linkCadastro="#"
       />
+      <Choose />
     </div>
   );
 }
