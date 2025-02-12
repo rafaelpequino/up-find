@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <Header 
-        logoPath="/img/logo3.png" 
+        logoPath="/img/iv/logo3.png" 
         logoAlt="Logo da UpFind" 
         linkLogin="#"
         linkCadastro="#"
