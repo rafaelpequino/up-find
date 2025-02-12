@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Paragraph } from "../Paragraph";
 import { Title } from "../Title";
+import { Button } from "../Button";
 
 const WelcomeContainer = styled.section`
     max-width: 100%;
@@ -32,20 +33,23 @@ const WelcomeContainer = styled.section`
     }
 `
 
-const MainTitle = styled.h1`
-    font-size: 32px;
-    color: #ffffff;
-
-    & span {
-        color: #007BFF;
-    }
+const DivButtons = styled.div`
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-top: 20px;
 `;
 
 const Welcome = () => {
     return (
         <WelcomeContainer>
             <Title size="50px" color="#fff" spanColor="#007BFF">Os melhores <span>desenvolvedores</span> reunidos em um só lugar</Title>
-            <Paragraph align="center" size="20px" color="#fff">Encontre o melhor profissional para o seu projeto</Paragraph>
+            <Paragraph align="center" color="#fff">Encontre o melhor profissional para o seu projeto</Paragraph>
+            <DivButtons>
+                <Button setBorderColor="#fff" setBackgroundColor="transparent">Como Funciona</Button>
+                <Button setBorderColor="#007BFF" setBackgroundColor="#007BFF">Criar Projeto</Button>
+            </DivButtons>
         </WelcomeContainer>
     );
 };
