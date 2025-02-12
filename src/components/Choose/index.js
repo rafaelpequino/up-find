@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Paragraph } from "../Paragraph";
 import { Title } from "../Title";
+import { useNavigate } from "react-router-dom";
 
 const ChooseContainer = styled.section`
     width: 100%;
@@ -54,16 +55,17 @@ const UpFoundContainer = styled(UpFinderContainer)`
 `;
 
 const Choose = () => {
+    const navigate = useNavigate();
     return (
         <ChooseContainer>
-            <UpFinderContainer>
+            <UpFinderContainer onClick={() => navigate('/upfinder')}>
                 <Title color="#fff">Sou UpFinder</Title>
                 <Paragraph color="#fff" align="center" size="20px">
                     Tenho um projeto e preciso de um desenvolvedor
                 </Paragraph>
             </UpFinderContainer>
 
-            <UpFoundContainer>
+            <UpFoundContainer onClick={() => navigate('/upfound')}>
                 <Title color="#fff">Sou UpFound</Title>
                 <Paragraph color="#fff" align="center" size="20px">
                     Sou desenvolvedor e quero fazer parte do time UpFind
