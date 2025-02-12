@@ -6,4 +6,8 @@ export const Paragraph = styled.p`
     text-align: ${ props => props.align || 'left' };
     font-size: ${ props => props.size || '16px' }; 
     padding: 0 20px;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
 `

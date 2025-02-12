@@ -9,6 +9,10 @@ const ChooseContainer = styled.section`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     overflow: hidden;
+    
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `;
 
 const UpFinderContainer = styled.div`
@@ -20,7 +24,7 @@ const UpFinderContainer = styled.div`
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    overflow: hidden; /* Garante que o efeito não vaze */
+    overflow: hidden;
 
     &::before {
         content: "";
