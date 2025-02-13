@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { Paragraph } from "../Paragraph";
 import { Title } from "../Title";
+import ItemDepoiment from "../ItemDepoiment";
+import { Paragraph } from "../Paragraph";
 
 const DepoimentsContainer = styled.section`
     width: 100%;
     padding: 70px 20px;
     background-color: var(--color-black);
-    
 `
 
 const ListDepoiments = styled.div`
@@ -16,37 +16,43 @@ const ListDepoiments = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 64px 32px;
+    padding: 32px 0;
 
     @media (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
     }
 `
 
-const IconMarks = styled.img`
-    width: 70px;
-    filter: invert(30%) sepia(99%) saturate(7493%) hue-rotate(200deg) brightness(103%) contrast(102%);    
-`
+const depoimentsList = [
+    {
+        text: 'Fui muito bem atendida, o profissional foi muito educado e fez um trabalho de qualidade. Valeu a pena, orçamento grátis e não é careiro.',
+        name: 'Ana Paula',
+        desc: 'contratou João Pedro'
+    },
+    {
+        text: 'Os profissionais são pessoas dedicadas com seus serviços. Tudo o que é pedido é feito da maneira como foi pedido. Aprovado!',
+        name: 'Jorge',
+        desc: 'contratou Alícia'
+    },
+    {
+        text: 'Um excelente profissional, pontual e acima de tudo confiável. Foi bastante educado e atencioso com o trabalho, recomendo.',
+        name: 'Osvaldo',
+        desc: 'contratou Rafael'
+    }
+];
+
 
 const Depoiments = () => {
     return (
         <DepoimentsContainer>
             <Title color="var(--color-white)" spanColor="var(--color-sky-1)">Nossos clientes <span>recomendam</span></Title>
             <ListDepoiments>
-                <div>
-                    <IconMarks src="/img/icons/marks.svg" />
-                    <Paragraph color="var(--color-white)">Fui muito bem atendida, o profissional foi muito educado e fez um trabalho de qualidade. Valeu a pena, orçamento grátis e não é careiro.</Paragraph>
-                    <Paragraph color="var(--color-white)" colorSpan="var(--color-sky-1)"><span>Ana Paula</span> contratou João Pedro</Paragraph>
-                </div>
-                <div>
-                    <IconMarks src="/img/icons/marks.svg" />
-                    <Paragraph color="var(--color-white)">Fui muito bem atendida, o profissional foi muito educado e fez um trabalho de qualidade. Valeu a pena, orçamento grátis e não é careiro.</Paragraph>
-                    <Paragraph color="var(--color-white)" colorSpan="var(--color-sky-1)"><span>Ana Paula</span> contratou João Pedro</Paragraph>
-                </div>
-                <div>
-                    <IconMarks src="/img/icons/marks.svg" />
-                    <Paragraph color="var(--color-white)">Fui muito bem atendida, o profissional foi muito educado e fez um trabalho de qualidade. Valeu a pena, orçamento grátis e não é careiro.</Paragraph>
-                    <Paragraph color="var(--color-white)" colorSpan="var(--color-sky-1)"><span>Ana Paula</span> contratou João Pedro</Paragraph>
-                </div>
+                {depoimentsList.map(depoiment => (
+                    <ItemDepoiment>
+                        <Paragraph color="var(--color-white)">{depoiment.text}</Paragraph>
+                        <Paragraph color="var(--color-white)" colorSpan="var(--color-sky-1)"><span>{ depoiment.name }</span> {depoiment.desc}</Paragraph>
+                    </ItemDepoiment>)
+                )}
             </ListDepoiments>
         </DepoimentsContainer>
     )

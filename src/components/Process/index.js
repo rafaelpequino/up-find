@@ -36,7 +36,7 @@ const ProcessContainer = styled.section`
 const StepByStep = styled.div`
     width: 100%;
     max-width: 800px;
-    margin: 40px auto;
+    margin: auto;
     position: relative;
 `
 
