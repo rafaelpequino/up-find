@@ -1,3 +1,4 @@
+import Depoiments from "../components/Depoiments"
 import Header from "../components/Header"
 import Plans from "../components/Plans"
 import Process from "../components/Process"
@@ -17,6 +18,7 @@ const UpFinder = () => {
             <Topics />
             <Process />
             <Plans />
+            <Depoiments />
         </div>
     )
 }
