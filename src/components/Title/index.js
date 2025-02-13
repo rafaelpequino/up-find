@@ -4,9 +4,9 @@ export const Title = styled.h2`
     font-size: ${ props => props.size || '55px' };
     color: ${ props => props.color || 'var(--color-black)' };
     text-align: ${ props => props.align || 'center' };
-    margin: 10px auto;
+    margin: 0 auto 30px;
     padding: 0 20px;
-    max-width: 800px;
+    max-width: 850px;
     font-weight: 700;
 
     & span {
