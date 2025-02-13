@@ -1,4 +1,5 @@
 import Header from "../components/Header"
+import Topics from "../components/Topics"
 import Welcome from "../components/Welcome"
 
 const UpFinder = () => {
@@ -11,6 +12,7 @@ const UpFinder = () => {
                 linkCadastro="#"
             />
             <Welcome />
+            <Topics />
         </div>
     )
 }
