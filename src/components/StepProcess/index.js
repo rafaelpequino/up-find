@@ -38,7 +38,6 @@ const CircleStep = styled.div`
 `;
 
 const StepProcess = (props) => {
-    // Estado para alinhar os textos com base no tamanho da tela
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {
@@ -46,10 +45,8 @@ const StepProcess = (props) => {
             setIsMobile(window.innerWidth <= 768);
         };
 
-        // Adiciona o listener de resize
         window.addEventListener('resize', handleResize);
         
-        // Remove o listener ao desmontar o componente
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
