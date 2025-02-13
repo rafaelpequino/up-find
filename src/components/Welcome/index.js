@@ -5,8 +5,8 @@ import { Button } from "../Button";
 
 const WelcomeContainer = styled.section`
     max-width: 100%;
-    padding: 50px 20px;
-    height: 60vh;
+    padding: 150px 20px 80px;
+    height: 100%;
     min-height: 400px;
     position: relative;
     display: flex;
@@ -27,6 +27,7 @@ const WelcomeContainer = styled.section`
         background-position: center;
         background-color: rgba(0, 0, 0, 0.8);
         background-blend-mode: darken;
+        background-attachment: fixed;
         transition: transform 0.3s ease-in-out;
         z-index: -1;
     }
