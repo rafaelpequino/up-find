@@ -59,15 +59,15 @@ const Choose = () => {
     return (
         <ChooseContainer>
             <UpFinderContainer onClick={() => navigate('/upfinder')}>
-                <Title color="#fff">Sou UpFinder</Title>
-                <Paragraph color="#fff" align="center" size="20px">
+                <Title color="var(--color-white)">Sou UpFinder</Title>
+                <Paragraph color="var(--color-white)" align="center" size="20px">
                     Tenho um projeto e preciso de um desenvolvedor
                 </Paragraph>
             </UpFinderContainer>
 
             <UpFoundContainer onClick={() => navigate('/upfound')}>
-                <Title color="#fff">Sou UpFound</Title>
-                <Paragraph color="#fff" align="center" size="20px">
+                <Title color="var(--color-white)">Sou UpFound</Title>
+                <Paragraph color="var(--color-white)" align="center" size="20px">
                     Sou desenvolvedor e quero fazer parte do time UpFind
                 </Paragraph>
             </UpFoundContainer>

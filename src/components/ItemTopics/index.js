@@ -7,17 +7,13 @@ const Icon = styled.img`
     filter: invert(1);
     text-align: center;
     margin: auto;
-
-    & span {
-        color: #007BFF;
-    }
 `
 
 const ItemTopics = (props) => {
     return (
         <div>
             <Icon src={'/img/icons/' + props.icon + '.svg'} alt="Ícone" />
-            <Paragraph align="center" color="#fff">{ props.text }</Paragraph>
+            <Paragraph align="center" color="var(--color-white)">{ props.text }</Paragraph>
         </div>
     )
 }

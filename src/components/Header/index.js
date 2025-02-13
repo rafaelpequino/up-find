@@ -29,20 +29,20 @@ const LinksContainer = styled.div`
 `;
 
 const LinkLogin = styled.a`
-    color: #fff;
+    color: var(--color-white);
     text-decoration: none;
     font-weight: normal;
     transition: color 0.3s ease;
 `;
 
 const LinkCadastro = styled.a`
-    color: #fff;
+    color: var(--color-white);
     text-decoration: none;
     font-weight: normal;
     transition: color 0.3s ease;
     padding: 8px 30px;
     border-radius: 15px;
-    border: 2px solid #fff;
+    border: 2px solid var(--color-white);
 `;
 
 const Header = (props) => {

@@ -4,3 +4,12 @@
   font-family: "Inter", serif;
 }
 
+:root {
+  --color-sky-1: #007BFF;
+  --color-sky-2: #8A2BE2;
+  --color-shadow-deep: #111111;
+  --color-shadow-soft: #1A1A1A;
+  --color-stone: #A9A9A9; 
+  --color-white: #ffffff; 
+  --color-black: #000000; 
+}

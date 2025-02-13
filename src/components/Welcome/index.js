@@ -43,11 +43,11 @@ const DivButtons = styled.div`
 const Welcome = () => {
     return (
         <WelcomeContainer>
-            <Title size="50px" color="#fff" spanColor="#007BFF">Os melhores <span>desenvolvedores</span> reunidos em um só lugar</Title>
-            <Paragraph align="center" color="#fff">Encontre o melhor profissional para o seu projeto</Paragraph>
+            <Title size="50px" color="var(--color-white)" spanColor="var(--color-sky-1)">Os melhores <span>desenvolvedores</span> reunidos em um só lugar</Title>
+            <Paragraph align="center" color="var(--color-white)">Encontre o melhor profissional para o seu projeto</Paragraph>
             <DivButtons>
-                <Button setBorderColor="#fff" setBackgroundColor="transparent">Como Funciona</Button>
-                <Button setBorderColor="#007BFF" setBackgroundColor="#007BFF">Criar Projeto</Button>
+                <Button setBorderColor="var(--color-white)" setBackgroundColor="transparent">Como Funciona</Button>
+                <Button setBorderColor="var(--color-sky-1)" setBackgroundColor="var(--color-sky-1)">Criar Projeto</Button>
             </DivButtons>
         </WelcomeContainer>
     );
