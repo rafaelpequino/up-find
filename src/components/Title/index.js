@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Title = styled.h2`
-    font-size: ${ props => props.size || '32px' };
+    font-size: ${ props => props.size || '55px' };
     color: ${ props => props.color || 'var(--color-black)' };
     text-align: ${ props => props.align || 'center' };
     margin: 10px auto;
