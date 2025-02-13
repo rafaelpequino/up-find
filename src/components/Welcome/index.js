@@ -6,7 +6,7 @@ import { Button } from "../Button";
 const WelcomeContainer = styled.section`
     max-width: 100%;
     padding: 50px 20px;
-    height: max-content;
+    height: 60vh;
     min-height: 400px;
     position: relative;
     display: flex;
