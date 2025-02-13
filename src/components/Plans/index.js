@@ -1,13 +1,19 @@
 import styled from "styled-components";
-import { Title } from "../Title";
 import ItemPlans from "../ItemPlans";
+import { Title } from "../Title";
 import { Subtitle } from "../Subtitle";
+import { Button } from "../Button";
 
 const PlansContainer = styled.section`
     max-width: 100%;
     background-color: var(--color-black);
     margin-top: -40px;
     padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 `
 
 const PlansComparison = styled.div`
@@ -39,7 +45,7 @@ const UpSafety = styled(Loose)`
 const Plans = () => {
     return (
         <PlansContainer>
-            <Title size="50px" color="var(--color-white)" spanColor="var(--color-sky-1)" align="center">Você decide como o projeto será <span>fechado</span></Title>
+            <Title color="var(--color-white)" spanColor="var(--color-sky-1)" align="center">Você decide como o projeto será <span>fechado</span></Title>
             <PlansComparison>
                 <Loose>
                     <Subtitle>Avulso</Subtitle>
@@ -58,6 +64,8 @@ const Plans = () => {
                     <ItemPlans icon="check" text="Mais segurança para você, para o profissional e para o projeto" />
                 </UpSafety>
             </PlansComparison>
+            
+            <Button setBorderColor="var(--color-sky-1)" setBackgroundColor="transparent">Criar Projeto</Button>
         </PlansContainer>
     )
 }
