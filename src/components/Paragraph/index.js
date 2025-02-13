@@ -6,7 +6,8 @@ export const Paragraph = styled.p`
     text-align: ${ props => props.align || 'left' };
     font-size: ${ props => props.size || '16px' }; 
     padding: 0 20px;
-    margin: 20px 0;
+    margin: ${ props => props.margin || '20px 0' };
+    opacity: ${ props => props.opacity || '1' };
 
     & span {
         color: var(--color-sky-1);
