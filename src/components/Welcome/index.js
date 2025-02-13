@@ -44,7 +44,7 @@ const DivButtons = styled.div`
 const Welcome = () => {
     return (
         <WelcomeContainer>
-            <Title size="50px" color="var(--color-white)" spanColor="var(--color-sky-1)">Os melhores <span>desenvolvedores</span> reunidos em um só lugar</Title>
+            <Title color="var(--color-white)" spanColor="var(--color-sky-1)">Os melhores <span>desenvolvedores</span> reunidos em um só lugar</Title>
             <Paragraph align="center" color="var(--color-white)">Encontre o melhor profissional para o seu projeto</Paragraph>
             <DivButtons>
                 <Button setBorderColor="var(--color-white)" setBackgroundColor="transparent">Como Funciona</Button>

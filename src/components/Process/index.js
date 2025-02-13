@@ -56,7 +56,7 @@ const CenterLine = styled.div`
 const Process = () => {
     return (
         <ProcessContainer>
-            <Title size="50px" color="var(--color-white)" spanColor="var(--color-sky-1)" align="center">Cada passo do <span>processo</span> é pensado em você</Title>
+            <Title color="var(--color-white)" spanColor="var(--color-sky-1)" align="center">Cada passo do <span>processo</span> é pensado em você</Title>
             <StepByStep>
                 { steps.map( step => (
                     <StepProcess 
