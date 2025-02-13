@@ -6,7 +6,7 @@ const TopicsContainer = styled.section`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 64px 32px;
-    padding: 60px 20px;
+    padding: 40px 20px;
     background-color: #000;
 
     @media (max-width: 768px) {
