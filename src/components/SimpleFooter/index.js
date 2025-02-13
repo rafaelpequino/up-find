@@ -6,4 +6,5 @@ export const SimpleFooter = styled.footer`
     color:rgba(255, 255, 255, 0.52);
     padding: 20px;
     background-color: #121212;
+    text-align: center;
 `

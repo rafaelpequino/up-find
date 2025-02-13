@@ -6,12 +6,6 @@ import { SimpleFooter } from './components/SimpleFooter';
 function App() {
   return (
     <div className="App">
-      <Header 
-        logoPath="/img/iv/first-logo.png" 
-        logoAlt="Logo da UpFind" 
-        linkLogin="#"
-        linkCadastro="#"
-      />
       <Choose />
       <SimpleFooter>Copyright © Plataforma UpFind - deu match</SimpleFooter>
     </div>

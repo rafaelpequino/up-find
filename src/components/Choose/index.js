@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const ChooseContainer = styled.section`
     width: 100%;
     height: max-content;
-    min-height: calc(100vh - 80px);
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     overflow: hidden;
@@ -59,14 +59,14 @@ const Choose = () => {
     return (
         <ChooseContainer>
             <UpFinderContainer onClick={() => navigate('/upfinder')}>
-                <Title color="var(--color-white)">Sou UpFinder</Title>
+                <Title color="var(--color-white)" spanColor="var(--color-sky-1)">Sou <span>UpFinder</span></Title>
                 <Paragraph color="var(--color-white)" align="center" size="20px">
                     Tenho um projeto e preciso de um desenvolvedor
                 </Paragraph>
             </UpFinderContainer>
 
             <UpFoundContainer onClick={() => navigate('/upfound')}>
-                <Title color="var(--color-white)">Sou UpFound</Title>
+                <Title color="var(--color-white)" spanColor="var(--color-sky-2)">Sou <span>UpFound</span></Title>
                 <Paragraph color="var(--color-white)" align="center" size="20px">
                     Sou desenvolvedor e quero fazer parte do time UpFind
                 </Paragraph>
