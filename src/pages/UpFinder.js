@@ -5,6 +5,7 @@ import Process from "../components/Process"
 import Questions from "../components/Questions"
 import Topics from "../components/Topics"
 import Welcome from "../components/Welcome"
+import EndCta from "../components/EndCta"
 
 const UpFinder = () => {
     return (
@@ -21,6 +22,7 @@ const UpFinder = () => {
             <Plans />
             <Depoiments />
             <Questions />
+            <EndCta />
         </div>
     )
 }
