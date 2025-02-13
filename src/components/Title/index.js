@@ -12,4 +12,8 @@ export const Title = styled.h2`
     & span {
         color: ${ props => props.spanColor || 'var(--color-black)' }
     }
+
+    @media (max-width: 768px) {
+        font-size: 45px };
+    }
 `

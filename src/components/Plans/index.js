@@ -13,16 +13,21 @@ const PlansContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    position: relative;
 `
 
 const PlansComparison = styled.div`
-    width: 100%;
+    width: calc(100% - 80px);
     max-width: 800px;
     margin: auto;
     display: flex;
     align-items: center;
-    padding: 50px 0;
+    padding: 50px 20px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 20px;
+    }
 `
 
 const Loose = styled.div`
@@ -35,6 +40,10 @@ const Loose = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 768px) {
+        border-radius: 15px;
+    }
 `
 
 const UpSafety = styled(Loose)`
