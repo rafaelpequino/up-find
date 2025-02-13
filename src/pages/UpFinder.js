@@ -1,4 +1,5 @@
 import Header from "../components/Header"
+import Process from "../components/Process"
 import Topics from "../components/Topics"
 import Welcome from "../components/Welcome"
 
@@ -13,6 +14,7 @@ const UpFinder = () => {
             />
             <Welcome />
             <Topics />
+            <Process />
         </div>
     )
 }
