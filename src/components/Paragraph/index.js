@@ -5,7 +5,7 @@ export const Paragraph = styled.p`
     color: ${ props => props.color || 'var(--color-black)' };
     text-align: ${ props => props.align || 'left' };
     font-size: ${ props => props.size || '16px' }; 
-    padding: 0 20px;
+    padding: 0;
     margin: ${ props => props.margin || '20px 0' };
     opacity: ${ props => props.opacity || '1' };
 
