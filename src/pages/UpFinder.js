@@ -7,7 +7,7 @@ const UpFinder = () => {
     return (
         <div className="App">
             <Header
-                logoPath="/img/iv/logo3.png"
+                logoPath="/img/iv/first-logo.png"
                 logoAlt="Logo da UpFind"
                 linkLogin="#"
                 linkCadastro="#"
