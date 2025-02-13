@@ -13,7 +13,6 @@ const WelcomeContainer = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     overflow: hidden;
     
     &::before {
