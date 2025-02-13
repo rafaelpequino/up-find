@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { useEffect, useState } from "react";
 
 const HeaderContainer = styled.header`
-    width: 98%;
-    max-width: 98%;
+    width: 100%;
+    max-width: 100%;
     padding: 0 20px;
     height: 80px;
     background-color: ${(props) => (props.isScrolled ? "var(--color-black)" : "transparent")};
@@ -66,17 +66,20 @@ const LinkCadastro = styled.a`
     }
 `;
 
+const DivInsideMobile = styled.a`
+    display: none;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+`
+
 const ImgInsideMobile = styled.img`
     width: 15px;
     filter: invert(1);
     padding: 11px 15px;
     border: 2px solid var(--color-black);
     border-radius: 20px;
-    display: none;
-
-    @media (max-width: 768px) {
-        display: block;
-    }
 `;
 
 const Header = (props) => {
@@ -101,7 +104,7 @@ const Header = (props) => {
             <LinksContainer>
                 <LinkLogin href={props.linkLogin}>Entrar</LinkLogin>
                 <LinkCadastro href={props.linkCadastro}>Cadastre-se</LinkCadastro>
-                <a href="#"><ImgInsideMobile src="/img/icons/big-lock.svg" alt="Ícone de cadeado" /></a>
+                <DivInsideMobile href="#"><ImgInsideMobile src="/img/icons/big-lock.svg" alt="Ícone de cadeado" /></DivInsideMobile>
             </LinksContainer>
         </HeaderContainer>
     );
