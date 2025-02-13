@@ -10,7 +10,6 @@ const ItemPlansContainer = styled.div`
 
 const ImgIcon = styled.img`
     width: 30px;
-    filter: invert(0);
 `
 
 const ItemPlans = (props) => {
