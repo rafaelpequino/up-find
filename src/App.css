@@ -16,3 +16,9 @@
   --color-white: #ffffff; 
   --color-black: #000000; 
 }
+
+@media (max-width: 320px) {
+  body {
+    display: none;
+  }
+}

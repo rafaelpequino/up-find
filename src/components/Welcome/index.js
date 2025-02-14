@@ -39,6 +39,10 @@ const DivButtons = styled.div`
     align-items: center;
     gap: 16px 32px;
     margin-top: 20px;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
 `;
 
 const Welcome = () => {

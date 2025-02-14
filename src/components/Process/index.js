@@ -42,14 +42,14 @@ const StepByStep = styled.div`
 
 const CenterLine = styled.div`
     position: absolute;
-    top: 75px;
+    top: 90px;
     left: 50%;
     width: 2px;
-    height: 78%;
+    height: 75%;
     background-color: var(--color-white);
 
     @media (max-width: 768px) {
-        left: 27px;
+        left: 25px;
     }
 `
 
