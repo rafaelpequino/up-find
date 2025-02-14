@@ -60,8 +60,17 @@ const Depoiments = () => {
                 <ListDepoiments>
                     {depoimentsList.map(depoiment => (
                         <ItemDepoiment key={depoiment.name}>
-                            <Paragraph color="var(--color-white)">{depoiment.text}</Paragraph>
-                            <Paragraph color="var(--color-white)" colorSpan="var(--color-sky-1)"><span>{ depoiment.name }</span> {depoiment.desc}</Paragraph>
+                            <Paragraph 
+                                $color="var(--color-white)"
+                            >
+                                {depoiment.text}
+                            </Paragraph>
+                            
+                            <Paragraph 
+                                $color="var(--color-white)"
+                            >
+                                <StyledSpan $color="var(--color-sky-1)">{ depoiment.name }</StyledSpan> {depoiment.desc}
+                            </Paragraph>
                         </ItemDepoiment>)
                     )}
                 </ListDepoiments>

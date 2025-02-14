@@ -64,7 +64,11 @@ const Choose = () => {
                 >
                     Sou <StyledSpan $color="var(--color-sky-1)">UpFinder</StyledSpan>
                 </Title>
-                <Paragraph color="var(--color-white)" align="center" size="20px">
+                <Paragraph 
+                    $color="var(--color-white)" 
+                    $align="center" 
+                    $size="20px"
+                >
                     Tenho um projeto e preciso de um desenvolvedor
                 </Paragraph>
             </UpFinderContainer>
@@ -75,7 +79,11 @@ const Choose = () => {
                 >
                     Sou <StyledSpan $color="var(--color-sky-2)">UpFound</StyledSpan>
                 </Title>
-                <Paragraph color="var(--color-white)" align="center" size="20px">
+                <Paragraph 
+                    $color="var(--color-white)" 
+                    $align="center" 
+                    $size="20px"
+                >
                     Sou desenvolvedor e quero fazer parte do time UpFind
                 </Paragraph>
             </UpFoundContainer>

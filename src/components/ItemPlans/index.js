@@ -19,7 +19,11 @@ const ItemPlans = (props) => {
     return (
         <ItemPlansContainer>
             <ImgIcon style={{ filter: `invert(${filterIcon})` }} src={`/img/icons/${props.icon}.svg`} alt="Ícone" />
-            <Paragraph color={colorText}>{props.text}</Paragraph>
+            <Paragraph
+                $color={colorText}
+            >
+                {props.text}
+            </Paragraph>
         </ItemPlansContainer>
     )
 }

@@ -29,7 +29,11 @@ const ItemQuestion = ({ question, children }) => {
     return (
         <ItemQuestionContainer>
             <DivQuestion onClick={() => setIsOpened(!isOpened)}>
-                <Paragraph color="var(--color-white)"><strong>{question}</strong></Paragraph>
+                <Paragraph 
+                    $color="var(--color-white)"
+                >
+                    <strong>{question}</strong>
+                </Paragraph>
                 <img src="/img/icons/bottom-arrow.svg" alt="Ícone de seta para baixo" />
             </DivQuestion>
             {isOpened && children}

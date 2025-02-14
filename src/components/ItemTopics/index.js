@@ -13,7 +13,12 @@ const ItemTopics = (props) => {
     return (
         <div>
             <Icon src={'/img/icons/' + props.icon + '.svg'} alt="Ícone" />
-            <Paragraph align="center" color="var(--color-white)">{ props.text }</Paragraph>
+            <Paragraph 
+                $align="center" 
+                $color="var(--color-white)"
+            >
+                { props.text }
+            </Paragraph>
         </div>
     )
 }

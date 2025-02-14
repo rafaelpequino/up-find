@@ -72,7 +72,13 @@ const Welcome = (props) => {
                 >
                     {props.children}
                 </Title>
-                <Paragraph align="left" color="var(--color-white)" size="24px">{props.text}</Paragraph>
+                <Paragraph 
+                    $align="left" 
+                    $color="var(--color-white)" 
+                    $size="24px"
+                >
+                    {props.text}
+                </Paragraph>
                 <DivButtons>
                     <Button setBorderColor="var(--color-white)" setBackgroundColor="transparent">Como Funciona</Button>
                     <Button setBorderColor={props.defaultColor} setBackgroundColor={props.defaultColor}>{props.cta} Projeto</Button>

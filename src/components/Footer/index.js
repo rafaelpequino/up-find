@@ -64,14 +64,24 @@ const Footer = (props) => {
             <DivInsideFooter>
                 <div>
                     <ImgLogo src="/img/iv/logo-white.png" alt="Logo da UpFind" />
-                    <Paragraph color="var(--color-white)" opacity=".7" align="left">Copyright © Plataforma UpFind - deu match</Paragraph>
+                    <Paragraph 
+                        $color="var(--color-white)" 
+                        $opacity=".7" 
+                        $align="left"
+                    >
+                        Copyright © Plataforma UpFind - deu match
+                    </Paragraph>
                     <DivInsta>
                         <ImgInsta src="/img/icons/instagram.svg" alt="Ícone do instagram" />
                         <span>@UpFind</span>
                     </DivInsta>
                 </div>
                 <div>
-                    <Paragraph color="var(--color-white)"><strong>UpFind</strong></Paragraph>
+                    <Paragraph 
+                        $color="var(--color-white)"
+                    >
+                        <strong>UpFind</strong>
+                    </Paragraph>
                     <List>
                         <li><a href="#">Quem Somos</a></li>
                         <li><a href="#">Como Funciona</a></li>
@@ -80,7 +90,11 @@ const Footer = (props) => {
                     </List>
                 </div>
                 <div>
-                    <Paragraph color="var(--color-white)"><strong>Acesso Rápido</strong></Paragraph>
+                    <Paragraph 
+                        $color="var(--color-white)"
+                    >
+                        <strong>Acesso Rápido</strong>
+                    </Paragraph>
                     <List>
                         <li><a href="#">Dados Pessoais</a></li>
                         <li><a href="#">Meus Projetos</a></li>
@@ -88,7 +102,11 @@ const Footer = (props) => {
                     </List>
                 </div>
                 <div>
-                    <Paragraph color="var(--color-white)"><strong>Documentos</strong></Paragraph>
+                    <Paragraph 
+                        $color="var(--color-white)"
+                    >
+                        <strong>Documentos</strong>
+                    </Paragraph>
                     <List>
                         <li><a href="#">Preciso de Ajuda</a></li>
                         <li><a href="#">Termos de Uso</a></li>

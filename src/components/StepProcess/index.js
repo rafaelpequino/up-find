@@ -59,10 +59,16 @@ const StepProcess = (props) => {
             {!isRightAligned && <CircleStep />}
             
             <div>
-                <Paragraph color={props.titleColor} align={paragraphAlign}>
+                <Paragraph 
+                    $color={props.titleColor} 
+                    $align={paragraphAlign}
+                >
                     <strong>{props.titleText}</strong>
                 </Paragraph>
-                <Paragraph color="var(--color-white)" align={paragraphAlign}>
+                <Paragraph 
+                    $color="var(--color-white)" 
+                    $align={paragraphAlign}
+                >
                     {props.desc}
                 </Paragraph>
             </div>

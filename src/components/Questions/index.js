@@ -64,7 +64,13 @@ const Questions = () => {
             <ListQuestions>
                 {questionsList.map(question => (
                     <ItemQuestion question={question.question} key={question.key}>
-                        <Paragraph color="var(--color-white)" margin="0 0 20px" opacity=".8">{question.answer}</Paragraph>
+                        <Paragraph 
+                            $color="var(--color-white)" 
+                            $margin="0 0 20px" 
+                            $opacity=".8"
+                        >
+                            {question.answer}
+                        </Paragraph>
                     </ItemQuestion>
                 ))}
             </ListQuestions>
