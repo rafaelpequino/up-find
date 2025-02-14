@@ -60,6 +60,7 @@ const Process = () => {
             <StepByStep>
                 { steps.map( step => (
                     <StepProcess 
+                        key={step.title}
                         titleColor="var(--color-sky-1)" 
                         align={step.align} 
                         titleText={step.title} 

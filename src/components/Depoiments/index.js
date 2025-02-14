@@ -48,7 +48,7 @@ const Depoiments = () => {
             <Title color="var(--color-white)" spanColor="var(--color-sky-1)">Nossos clientes <span>recomendam</span></Title>
             <ListDepoiments>
                 {depoimentsList.map(depoiment => (
-                    <ItemDepoiment>
+                    <ItemDepoiment key={depoiment.name}>
                         <Paragraph color="var(--color-white)">{depoiment.text}</Paragraph>
                         <Paragraph color="var(--color-white)" colorSpan="var(--color-sky-1)"><span>{ depoiment.name }</span> {depoiment.desc}</Paragraph>
                     </ItemDepoiment>)
