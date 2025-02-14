@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Paragraph = styled.p`
+    width: 100%;
     font-size: 16px;
     color: ${ props => props.color || 'var(--color-black)' };
     text-align: ${ props => props.align || 'left' };

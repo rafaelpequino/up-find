@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
+    display: block;
     text-align: center;
     font-size: 16px;
     color: var(--color-white);
@@ -12,5 +13,9 @@ export const Button = styled.button`
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
-    display: block;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        max-width: 500px;
+    }
 `

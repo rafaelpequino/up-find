@@ -40,6 +40,11 @@ const DivButtons = styled.div`
     gap: 16px 32px;
     margin-top: 20px;
 
+    @media (max-width: 768px) {
+        width: 100%;
+        max-width: 500px;
+    }
+        
     @media (max-width: 500px) {
         flex-direction: column;
     }
@@ -48,8 +53,8 @@ const DivButtons = styled.div`
 const Welcome = () => {
     return (
         <WelcomeContainer>
-            <Title color="var(--color-white)" spanColor="var(--color-sky-1)">Os melhores <span>desenvolvedores</span> reunidos em um só lugar</Title>
-            <Paragraph align="center" color="var(--color-white)">Encontre o melhor profissional para o seu projeto</Paragraph>
+            <Title color="var(--color-white)" spanColor="var(--color-sky-1)" align="left">Os melhores <span>desenvolvedores</span> reunidos em um só lugar</Title>
+            <Paragraph align="left" color="var(--color-white)">Encontre o melhor profissional para o seu projeto</Paragraph>
             <DivButtons>
                 <Button setBorderColor="var(--color-white)" setBackgroundColor="transparent">Como Funciona</Button>
                 <Button setBorderColor="var(--color-sky-1)" setBackgroundColor="var(--color-sky-1)">Criar Projeto</Button>

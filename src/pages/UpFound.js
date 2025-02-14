@@ -8,11 +8,11 @@ import Welcome from "../components/Welcome"
 import EndCta from "../components/EndCta"
 import Footer from "../components/Footer"
 
-const UpFinder = () => {
+const UpFound = () => {
     return (
         <div className="App">
             <Header
-                logoPath="/img/iv/first-logo.png"
+                logoPath="/img/iv/first-logo-for-devs.png"
                 logoAlt="Logo da UpFind"
                 linkLogin="#"
                 linkCadastro="#"
@@ -29,4 +29,4 @@ const UpFinder = () => {
     )
 }
 
-export default UpFinder
+export default UpFound

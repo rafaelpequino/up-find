@@ -5,7 +5,7 @@ export const Title = styled.h2`
     color: ${ props => props.color || 'var(--color-black)' };
     text-align: ${ props => props.align || 'center' };
     margin: 0 auto 30px;
-    padding: 0 20px;
+    padding: 0;
     max-width: 850px;
     font-weight: 700;
 
@@ -15,6 +15,7 @@ export const Title = styled.h2`
 
     @media (max-width: 768px) {
         font-size: 45px;
+        text-align: left;
     }
 
     @media (max-width: 500px) {
