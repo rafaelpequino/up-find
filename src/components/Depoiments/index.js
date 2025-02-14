@@ -9,6 +9,12 @@ const DepoimentsContainer = styled.section`
     background-color: var(--color-black);
 `
 
+const InsideDepoiments = styled.div`
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+`
+
 const ListDepoiments = styled.div`
     width: 100%;
     max-width: 1440px;
@@ -45,15 +51,17 @@ const depoimentsList = [
 const Depoiments = () => {
     return (
         <DepoimentsContainer>
-            <Title color="var(--color-white)" spanColor="var(--color-sky-1)">Nossos clientes <span>recomendam</span></Title>
-            <ListDepoiments>
-                {depoimentsList.map(depoiment => (
-                    <ItemDepoiment key={depoiment.name}>
-                        <Paragraph color="var(--color-white)">{depoiment.text}</Paragraph>
-                        <Paragraph color="var(--color-white)" colorSpan="var(--color-sky-1)"><span>{ depoiment.name }</span> {depoiment.desc}</Paragraph>
-                    </ItemDepoiment>)
-                )}
-            </ListDepoiments>
+            <InsideDepoiments>
+                <Title color="var(--color-white)" spanColor="var(--color-sky-1)">Nossos clientes <span>recomendam</span></Title>
+                <ListDepoiments>
+                    {depoimentsList.map(depoiment => (
+                        <ItemDepoiment key={depoiment.name}>
+                            <Paragraph color="var(--color-white)">{depoiment.text}</Paragraph>
+                            <Paragraph color="var(--color-white)" colorSpan="var(--color-sky-1)"><span>{ depoiment.name }</span> {depoiment.desc}</Paragraph>
+                        </ItemDepoiment>)
+                    )}
+                </ListDepoiments>
+            </InsideDepoiments>
         </DepoimentsContainer>
     )
 }

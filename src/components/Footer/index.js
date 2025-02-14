@@ -10,8 +10,16 @@ const FooterContainer = styled.footer`
 
 const DivInsideFooter = styled.div`
     width: 100%;
+    max-width: 1440px;
+    margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 64px 32px;
+
+    @media (max-width: 999px) {
+        flex-direction: column;
+    }
 `
 
 const ImgLogo = styled.img`
