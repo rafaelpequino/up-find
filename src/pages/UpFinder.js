@@ -25,7 +25,7 @@ const UpFinder = () => {
                 cta="Criar"
                 bkgUrl="/img/team.jpg"
             >
-                Os melhores <StyledSpan $color="var(--color-sky-1)">devensolvedores</StyledSpan> reunidos em um só lugar
+                Os melhores <StyledSpan $color="var(--color-sky-1)">desenvolvedores</StyledSpan> reunidos em um só lugar
             </Welcome>
 
             <Topics
