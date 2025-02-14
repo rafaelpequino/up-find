@@ -4,7 +4,7 @@ import { Title } from "../Title";
 import { Button } from "../Button";
 
 const WelcomeContainer = styled.section`
-    max-width: 100%;
+    width: 100%;
     padding: 150px 20px 80px;
     height: 100%;
     min-height: 400px;
@@ -33,10 +33,20 @@ const WelcomeContainer = styled.section`
     }
 `
 
+const InsideWelcome = styled.div`
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+`
+
 const DivButtons = styled.div`
-    width: max-content;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 16px 32px;
     margin-top: 20px;
 
@@ -53,12 +63,14 @@ const DivButtons = styled.div`
 const Welcome = () => {
     return (
         <WelcomeContainer>
-            <Title color="var(--color-white)" spanColor="var(--color-sky-1)" align="left">Os melhores <span>desenvolvedores</span> reunidos em um só lugar</Title>
-            <Paragraph align="left" color="var(--color-white)">Encontre o melhor profissional para o seu projeto</Paragraph>
-            <DivButtons>
-                <Button setBorderColor="var(--color-white)" setBackgroundColor="transparent">Como Funciona</Button>
-                <Button setBorderColor="var(--color-sky-1)" setBackgroundColor="var(--color-sky-1)">Criar Projeto</Button>
-            </DivButtons>
+            <InsideWelcome>
+                <Title color="var(--color-white)" spanColor="var(--color-sky-1)" align="left" marginSides="0">Os melhores <span>desenvolvedores</span> reunidos em um só lugar</Title>
+                <Paragraph align="left" color="var(--color-white)">Encontre o melhor profissional para o seu projeto</Paragraph>
+                <DivButtons>
+                    <Button setBorderColor="var(--color-white)" setBackgroundColor="transparent">Como Funciona</Button>
+                    <Button setBorderColor="var(--color-sky-1)" setBackgroundColor="var(--color-sky-1)">Criar Projeto</Button>
+                </DivButtons>
+            </InsideWelcome>
         </WelcomeContainer>
     );
 };

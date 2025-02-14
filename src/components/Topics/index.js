@@ -13,15 +13,16 @@ const ListTopics = styled.div`
     width: 100%;
     max-width: 1440px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 64px 32px;
 
     @media (max-width: 768px) {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: space-between;
     }
 `
 
