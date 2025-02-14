@@ -13,7 +13,9 @@ const ListTopics = styled.div`
     width: 100%;
     max-width: 1440px;
     margin: auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 64px 32px;
