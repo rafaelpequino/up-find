@@ -15,11 +15,6 @@ const HeaderContainer = styled.header`
     left: 0;
     z-index: 20;
     transition: background-color 0.2s ease;
-
-    @media (max-width: 768px) {
-        width: calc(100% - 40px);
-        max-width: calc(100% - 40px);
-    }
 `;
 
 const Logo = styled.img`
@@ -75,7 +70,7 @@ const DivInsideMobile = styled.a`
 `
 
 const ImgInsideMobile = styled.img`
-    width: 15px;
+    width: 50px;
     filter: invert(1);
     padding: 11px 15px;
     border: 2px solid var(--color-black);
