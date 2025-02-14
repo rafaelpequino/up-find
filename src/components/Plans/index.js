@@ -54,7 +54,13 @@ const UpSafety = styled(Loose)`
 const Plans = () => {
     return (
         <PlansContainer>
-            <Title color="var(--color-white)" spanColor="var(--color-sky-1)" align="center">Você decide como o projeto será <span>fechado</span></Title>
+            <Title 
+                color="var(--color-white)" 
+                spanColor="var(--color-sky-1)" 
+                align="center"
+            >
+                Você decide como o projeto será <span>fechado</span>
+            </Title>
             <PlansComparison>
                 <Loose>
                     <Subtitle>Avulso</Subtitle>

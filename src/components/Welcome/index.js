@@ -65,7 +65,12 @@ const Welcome = (props) => {
     return (
         <WelcomeContainer style={{ '--bkg-url': `url(${props.bkgUrl || '/img/code.jpg'})` }}>
             <InsideWelcome>
-                <Title color="var(--color-white)" spanColor={props.defaultColor} align="left" marginSides="0">
+                <Title 
+                    $color="var(--color-white)" 
+                    $spanColor={props.defaultColor} 
+                    $align="left" 
+                    $marginSides="0"
+                >
                     {props.children}
                 </Title>
                 <Paragraph align="left" color="var(--color-white)" size="24px">{props.text}</Paragraph>

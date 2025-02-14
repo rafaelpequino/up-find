@@ -56,7 +56,12 @@ const questionsList = [
 const Questions = () => {
     return (
         <QuestionsContainer>
-            <Title color="var(--color-white)" spanColor="var(--color-sky-1)"><span>Dúvidas</span> Frequentes</Title>
+            <Title 
+                $color="var(--color-white)" 
+                $spanColor="var(--color-sky-1)"
+            >
+                <span>Dúvidas</span> Frequentes
+            </Title>
             <ListQuestions>
                 {questionsList.map(question => (
                     <ItemQuestion question={question.question} key={question.key}>

@@ -52,7 +52,12 @@ const Depoiments = () => {
     return (
         <DepoimentsContainer>
             <InsideDepoiments>
-                <Title color="var(--color-white)" spanColor="var(--color-sky-1)">Nossos clientes <span>recomendam</span></Title>
+                <Title 
+                    $color="var(--color-white)" 
+                    $spanColor="var(--color-sky-1)"
+                >
+                    Nossos clientes <span>recomendam</span>
+                </Title>
                 <ListDepoiments>
                     {depoimentsList.map(depoiment => (
                         <ItemDepoiment key={depoiment.name}>

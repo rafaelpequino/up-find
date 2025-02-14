@@ -59,14 +59,24 @@ const Choose = () => {
     return (
         <ChooseContainer>
             <UpFinderContainer onClick={() => navigate('/upfinder')}>
-                <Title color="var(--color-white)" spanColor="var(--color-sky-1)">Sou <span>UpFinder</span></Title>
+                <Title 
+                    $color="var(--color-white)" 
+                    $spanColor="var(--color-sky-1)"
+                >
+                    Sou <span>UpFinder</span>
+                </Title>
                 <Paragraph color="var(--color-white)" align="center" size="20px">
                     Tenho um projeto e preciso de um desenvolvedor
                 </Paragraph>
             </UpFinderContainer>
 
             <UpFoundContainer onClick={() => navigate('/upfound')}>
-                <Title color="var(--color-white)" spanColor="var(--color-sky-2)">Sou <span>UpFound</span></Title>
+                <Title 
+                    $color="var(--color-white)" 
+                    $spanColor="var(--color-sky-2)"
+                >
+                    Sou <span>UpFound</span>
+                </Title>
                 <Paragraph color="var(--color-white)" align="center" size="20px">
                     Sou desenvolvedor e quero fazer parte do time UpFind
                 </Paragraph>

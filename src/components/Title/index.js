@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const Title = styled.h2`
-    font-size: ${ props => props.size || '55px' };
-    color: ${ props => props.color || 'var(--color-black)' };
-    text-align: ${ props => props.align || 'center' };
-    margin: 0 ${ props => props.marginSides || 'auto' } 30px;
+    font-size: ${props => props.$size || '55px'};
+    color: ${props => props.$color || 'var(--color-black)'};
+    text-align: ${props => props.$align || 'center'};
+    margin: 0 ${props => props.$marginSides || 'auto'} 30px;
     padding: 0;
     max-width: 850px;
     font-weight: 700;
 
     & span {
-        color: ${ props => props.spanColor || 'var(--color-black)' }
+        color: ${props => props.$spanColor || 'var(--color-black)'};
     }
 
     @media (max-width: 768px) {
@@ -26,4 +26,4 @@ export const Title = styled.h2`
     @media (max-width: 400px) {
         font-size: 30px;
     }
-`
+`;
