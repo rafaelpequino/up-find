@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { useEffect, useState } from "react";
 
-const HeaderContainer = styled.header`
+const HeaderContainer = styled.header.withConfig({
+    shouldForwardProp: (prop) => prop !== 'isScrolled'
+})`
     width: 100%;
     max-width: 100%;
     padding: 0 20px;
@@ -16,6 +18,7 @@ const HeaderContainer = styled.header`
     z-index: 20;
     transition: background-color 0.2s ease;
 `;
+
 
 const Logo = styled.img`
     width: 120px;
