@@ -17,12 +17,12 @@ const PlansContainer = styled.section`
 `
 
 const PlansComparison = styled.div`
-    width: calc(100% - 80px);
+    width: 100%;
     max-width: 800px;
     margin: auto;
     display: flex;
     align-items: center;
-    padding: 50px 20px;
+    padding: 50px 0;
 
     @media (max-width: 768px) {
         flex-direction: column;
