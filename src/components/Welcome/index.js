@@ -6,8 +6,9 @@ import { Button } from "../Button";
 const WelcomeContainer = styled.section`
     width: 100%;
     padding: 150px 20px 80px;
-    height: 100%;
-    min-height: 400px;
+    height: 75vh;
+    min-height: 600px;
+    max-height: 800px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -22,7 +23,7 @@ const WelcomeContainer = styled.section`
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url('/img/team.jpg');
+        background-image: var(--bkg-url);
         background-size: cover;
         background-position: center;
         background-color: rgba(0, 0, 0, 0.8);
@@ -48,7 +49,7 @@ const DivButtons = styled.div`
     align-items: center;
     justify-content: flex-start;
     gap: 16px 32px;
-    margin-top: 20px;
+    margin-top: 35px;
 
     @media (max-width: 768px) {
         width: 100%;
@@ -60,19 +61,22 @@ const DivButtons = styled.div`
     }
 `;
 
-const Welcome = () => {
+const Welcome = (props) => {
     return (
-        <WelcomeContainer>
+        <WelcomeContainer style={{ '--bkg-url': `url(${props.bkgUrl || '/img/code.jpg'})` }}>
             <InsideWelcome>
-                <Title color="var(--color-white)" spanColor="var(--color-sky-1)" align="left" marginSides="0">Os melhores <span>desenvolvedores</span> reunidos em um só lugar</Title>
-                <Paragraph align="left" color="var(--color-white)">Encontre o melhor profissional para o seu projeto</Paragraph>
+                <Title color="var(--color-white)" spanColor={props.defaultColor} align="left" marginSides="0">
+                    {props.children}
+                </Title>
+                <Paragraph align="left" color="var(--color-white)" size="24px">{props.text}</Paragraph>
                 <DivButtons>
                     <Button setBorderColor="var(--color-white)" setBackgroundColor="transparent">Como Funciona</Button>
-                    <Button setBorderColor="var(--color-sky-1)" setBackgroundColor="var(--color-sky-1)">Criar Projeto</Button>
+                    <Button setBorderColor={props.defaultColor} setBackgroundColor={props.defaultColor}>{props.cta} Projeto</Button>
                 </DivButtons>
             </InsideWelcome>
         </WelcomeContainer>
     );
 };
+
 
 export default Welcome;

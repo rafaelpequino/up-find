@@ -17,14 +17,37 @@ const UpFound = () => {
                 linkLogin="#"
                 linkCadastro="#"
             />
-            <Welcome />
-            <Topics />
-            <Process />
-            <Plans />
-            <Depoiments />
-            <Questions />
-            <EndCta />
-            <Footer />
+
+            <Welcome
+                defaultColor="var(--color-sky-2)"
+                text="Leads qualificados para todo tipo de programador"
+                cta="Buscar"
+                bkgUrl="/img/code.jpg"
+            >
+                Dev, esqueça a dificuldade para encontrar <span>clientes</span>
+            </Welcome>
+
+            <Topics
+                defaultColor="var(--color-sky-2)"
+            />
+            <Process
+                defaultColor="var(--color-sky-2)"
+            />
+            <Plans
+                defaultColor="var(--color-sky-2)"
+            />
+            <Depoiments
+                defaultColor="var(--color-sky-2)"
+            />
+            <Questions
+                defaultColor="var(--color-sky-2)"
+            />
+            <EndCta
+                defaultColor="var(--color-sky-2)"
+            />
+            <Footer
+                defaultColor="var(--color-sky-2)"
+            />
         </div>
     )
 }

@@ -17,14 +17,37 @@ const UpFinder = () => {
                 linkLogin="#"
                 linkCadastro="#"
             />
-            <Welcome />
-            <Topics />
-            <Process />
-            <Plans />
-            <Depoiments />
-            <Questions />
-            <EndCta />
-            <Footer />
+
+            <Welcome
+                defaultColor="var(--color-sky-1)"
+                text="Encontre o melhor profissional para o seu projeto"
+                cta="Criar"
+                bkgUrl="/img/team.jpg"
+            >
+                Os melhores <span>desenvolvedores</span> reunidos em um só lugar
+            </Welcome>
+
+            <Topics
+                defaultColor="var(--color-sky-1)"
+            />
+            <Process
+                defaultColor="var(--color-sky-1)"
+            />
+            <Plans
+                defaultColor="var(--color-sky-1)"
+            />
+            <Depoiments
+                defaultColor="var(--color-sky-1)"
+            />
+            <Questions
+                defaultColor="var(--color-sky-1)"
+            />
+            <EndCta
+                defaultColor="var(--color-sky-1)"
+            />
+            <Footer
+                defaultColor="var(--color-sky-1)"
+            />
         </div>
     )
 }
