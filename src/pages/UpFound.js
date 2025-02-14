@@ -7,6 +7,7 @@ import Topics from "../components/Topics"
 import Welcome from "../components/Welcome"
 import EndCta from "../components/EndCta"
 import Footer from "../components/Footer"
+import { StyledSpan } from "../components/Title"
 
 const UpFound = () => {
     return (
@@ -24,7 +25,7 @@ const UpFound = () => {
                 cta="Buscar"
                 bkgUrl="/img/code.jpg"
             >
-                Dev, esqueça a dificuldade para encontrar <span>clientes</span>
+                Dev, esqueça a dificuldade para encontrar <StyledSpan $color="var(--color-sky-2)">clientes</StyledSpan>
             </Welcome>
 
             <Topics
