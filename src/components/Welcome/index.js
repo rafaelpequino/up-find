@@ -37,7 +37,7 @@ const DivButtons = styled.div`
     width: max-content;
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 16px 32px;
     margin-top: 20px;
 `;
 
