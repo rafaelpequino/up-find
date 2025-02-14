@@ -7,6 +7,7 @@ import Topics from "../components/Topics"
 import Welcome from "../components/Welcome"
 import EndCta from "../components/EndCta"
 import Footer from "../components/Footer"
+import { StyledSpan } from "../components/Title"
 
 const UpFinder = () => {
     return (
@@ -24,7 +25,7 @@ const UpFinder = () => {
                 cta="Criar"
                 bkgUrl="/img/team.jpg"
             >
-                Os melhores <span>desenvolvedores</span> reunidos em um só lugar
+                Os melhores <StyledSpan $color="var(--color-sky-1)">devensolvedores</StyledSpan> reunidos em um só lugar
             </Welcome>
 
             <Topics

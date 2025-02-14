@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Paragraph } from "../Paragraph";
-import { Title } from "../Title";
+import { StyledSpan, Title } from "../Title";
 import { useNavigate } from "react-router-dom";
 
 const ChooseContainer = styled.section`
@@ -61,9 +61,8 @@ const Choose = () => {
             <UpFinderContainer onClick={() => navigate('/upfinder')}>
                 <Title 
                     $color="var(--color-white)" 
-                    $spanColor="var(--color-sky-1)"
                 >
-                    Sou <span>UpFinder</span>
+                    Sou <StyledSpan $color="var(--color-sky-1)">UpFinder</StyledSpan>
                 </Title>
                 <Paragraph color="var(--color-white)" align="center" size="20px">
                     Tenho um projeto e preciso de um desenvolvedor
@@ -73,9 +72,8 @@ const Choose = () => {
             <UpFoundContainer onClick={() => navigate('/upfound')}>
                 <Title 
                     $color="var(--color-white)" 
-                    $spanColor="var(--color-sky-2)"
                 >
-                    Sou <span>UpFound</span>
+                    Sou <StyledSpan $color="var(--color-sky-2)">UpFound</StyledSpan>
                 </Title>
                 <Paragraph color="var(--color-white)" align="center" size="20px">
                     Sou desenvolvedor e quero fazer parte do time UpFind

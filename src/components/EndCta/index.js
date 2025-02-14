@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Title } from "../Title"
+import { StyledSpan, Title } from "../Title"
 import { Button } from "../Button"
 
 const EndCtaContainer = styled.section`
@@ -19,10 +19,9 @@ const EndCta = () => {
         <EndCtaContainer>
             <Title 
                 $color="var(--color-white)" 
-                $spanColor="var(--color-sky-1)" 
                 $size="45px"
             >
-                Vamos buscar o <span>melhor desenvolvedor</span> para o <span>seu projeto</span>?
+                Vamos buscar o <StyledSpan $color="var(--color-sky-1)">melhor desenvolvedor</StyledSpan> para o <StyledSpan $color="var(--color-sky-1)">seu projeto</StyledSpan>?
             </Title>
             <br/>
             <Button setBorderColor="var(--color-sky-1)" setBackgroundColor="transparent">Criar Projeto</Button>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Title } from "../Title";
+import { StyledSpan, Title } from "../Title";
 import ItemDepoiment from "../ItemDepoiment";
 import { Paragraph } from "../Paragraph";
 
@@ -54,9 +54,8 @@ const Depoiments = () => {
             <InsideDepoiments>
                 <Title 
                     $color="var(--color-white)" 
-                    $spanColor="var(--color-sky-1)"
                 >
-                    Nossos clientes <span>recomendam</span>
+                    Nossos clientes <StyledSpan $color="var(--color-sky-1)">recomendam</StyledSpan>
                 </Title>
                 <ListDepoiments>
                     {depoimentsList.map(depoiment => (

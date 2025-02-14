@@ -67,7 +67,6 @@ const Welcome = (props) => {
             <InsideWelcome>
                 <Title 
                     $color="var(--color-white)" 
-                    $spanColor={props.defaultColor} 
                     $align="left" 
                     $marginSides="0"
                 >

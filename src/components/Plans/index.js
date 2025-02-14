@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import ItemPlans from "../ItemPlans";
-import { Title } from "../Title";
+import { StyledSpan, Title } from "../Title";
 import { Subtitle } from "../Subtitle";
 import { Button } from "../Button";
 
@@ -55,11 +55,10 @@ const Plans = () => {
     return (
         <PlansContainer>
             <Title 
-                color="var(--color-white)" 
-                spanColor="var(--color-sky-1)" 
-                align="center"
+                $color="var(--color-white)" 
+                $align="center"
             >
-                Você decide como o projeto será <span>fechado</span>
+                Você decide como o projeto será <StyledSpan $color="var(--color-sky-1)">fechado</StyledSpan>
             </Title>
             <PlansComparison>
                 <Loose>
@@ -70,7 +69,7 @@ const Plans = () => {
                     <ItemPlans icon="x" text="Não nos responsabilizamos por eventuais problemas com o projeto ou pagamento" />
                 </Loose>
                 <UpSafety>
-                    <Subtitle color="var(--color-white)">UpSafety</Subtitle>
+                    <Subtitle $color="var(--color-white)">UpSafety</Subtitle>
                     <br />
                     <ItemPlans icon="check" text="Pagamento e contratação são realizados diretamente através da plataforma" />
                     <br />

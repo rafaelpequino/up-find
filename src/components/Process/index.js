@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Title } from "../Title";
+import { StyledSpan, Title } from "../Title";
 import StepProcess from "../StepProcess";
 
 const steps = [
@@ -58,10 +58,9 @@ const Process = () => {
         <ProcessContainer>
             <Title 
                 $color="var(--color-white)" 
-                $spanColor="var(--color-sky-1)" 
                 $align="center"
             >
-                Cada passo do <span>processo</span> é pensado em você
+                Cada passo do <StyledSpan $color="var(--color-sky-1)">processo</StyledSpan> é pensado em você
             </Title>
             <StepByStep>
                 { steps.map( step => (

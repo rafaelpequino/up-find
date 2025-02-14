@@ -1,5 +1,5 @@
 import ItemQuestion from '../ItemQuestion';
-import { Title } from '../Title';
+import { StyledSpan, Title } from '../Title';
 import styled from 'styled-components';
 import { Paragraph } from '../Paragraph';
 
@@ -58,9 +58,8 @@ const Questions = () => {
         <QuestionsContainer>
             <Title 
                 $color="var(--color-white)" 
-                $spanColor="var(--color-sky-1)"
             >
-                <span>Dúvidas</span> Frequentes
+                <StyledSpan $color="var(--color-sky-1)">Dúvidas</StyledSpan> Frequentes
             </Title>
             <ListQuestions>
                 {questionsList.map(question => (

@@ -9,10 +9,6 @@ export const Title = styled.h2`
     max-width: 850px;
     font-weight: 700;
 
-    & span {
-        color: ${props => props.$spanColor || 'var(--color-black)'};
-    }
-
     @media (max-width: 768px) {
         font-size: 45px;
         text-align: left;
@@ -26,4 +22,8 @@ export const Title = styled.h2`
     @media (max-width: 400px) {
         font-size: 30px;
     }
+`;
+
+export const StyledSpan = styled.span`
+    color: ${props => props.$color || 'var(--color-black)'};
 `;
