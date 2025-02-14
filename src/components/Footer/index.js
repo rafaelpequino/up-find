@@ -63,7 +63,7 @@ const Footer = (props) => {
         <FooterContainer>
             <DivInsideFooter>
                 <div>
-                    <ImgLogo src="/img/iv/logo6.png" alt="Logo da UpFind" />
+                    <ImgLogo src="/img/iv/logo-white.png" alt="Logo da UpFind" />
                     <Paragraph color="var(--color-white)" opacity=".7" align="left">Copyright © Plataforma UpFind - deu match</Paragraph>
                     <DivInsta>
                         <ImgInsta src="/img/icons/instagram.svg" alt="Ícone do instagram" />
