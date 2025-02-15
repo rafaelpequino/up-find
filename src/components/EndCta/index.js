@@ -14,17 +14,17 @@ const EndCtaContainer = styled.section`
     position: relative;
 `
 
-const EndCta = () => {
+const EndCta = (props) => {
     return (
         <EndCtaContainer>
             <Title 
                 $color="var(--color-white)" 
                 $size="45px"
             >
-                Vamos buscar o <StyledSpan $color="var(--color-sky-1)">melhor desenvolvedor</StyledSpan> para o <StyledSpan $color="var(--color-sky-1)">seu projeto</StyledSpan>?
+                Vamos buscar o <StyledSpan $color={props.defaultColor}>melhor desenvolvedor</StyledSpan> para o <StyledSpan $color={props.defaultColor}>seu projeto</StyledSpan>?
             </Title>
             <br/>
-            <Button setBorderColor="var(--color-sky-1)" setBackgroundColor="transparent">Criar Projeto</Button>
+            <Button setBorderColor={props.defaultColor} setBackgroundColor="transparent">Criar Projeto</Button>
         </EndCtaContainer>
     )
 }
