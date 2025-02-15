@@ -28,7 +28,8 @@ const CircleStep = styled.div`
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 2px solid var(--color-sky-1);
+    border-width: 2px;
+    border-style: solid;
     background-color: var(--color-black);
     z-index: 10;
 
@@ -46,7 +47,7 @@ const StepProcess = (props) => {
         };
 
         window.addEventListener('resize', handleResize);
-        
+
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
@@ -56,24 +57,24 @@ const StepProcess = (props) => {
     return (
         <StepProcessContainer>
             {!isRightAligned && <AssistantDiv />}
-            {!isRightAligned && <CircleStep />}
-            
+            {!isRightAligned && <CircleStep style={{borderColor: props.circleColor}} />}
+
             <div>
-                <Paragraph 
-                    $color={props.titleColor} 
+                <Paragraph
+                    $color={props.titleColor}
                     $align={paragraphAlign}
                 >
                     <strong>{props.titleText}</strong>
                 </Paragraph>
-                <Paragraph 
-                    $color="var(--color-white)" 
+                <Paragraph
+                    $color="var(--color-white)"
                     $align={paragraphAlign}
                 >
                     {props.desc}
                 </Paragraph>
             </div>
 
-            {isRightAligned && <CircleStep />}
+            {isRightAligned && <CircleStep style={{borderColor: props.circleColor}} />}
             {isRightAligned && <AssistantDiv />}
         </StepProcessContainer>
     );

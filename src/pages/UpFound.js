@@ -24,6 +24,30 @@ const listTopics = [
     }
 ]
 
+const steps = [
+    {
+        title: '1 - Criação do projeto',
+        desc: 'O cliente irá preencher um formulário fornecendo todas as informações necessárias sobre o projeto',
+        align: 'right'
+    },
+    {
+        title: '2 - Direcionamento',
+        desc: 'Nosso algoritmo irá selecionar os desenvolvedores que mais se enquadram no projeto',
+        align: 'left'
+    },
+    {
+        title: '3 - Contato e Orçamento',
+        desc: 'Os projetos compatíveis com suas skills aparecerão no seu painel de dev. Você escolhe em quais quer participar e recebe o contato do cliente para negociar diretamente',
+        align: 'right'
+    },
+    {
+        title: '4 - Fechamento',
+        desc: 'Se o cliente decidir fechar o projeto com você, vocês devem definir juntos a melhor forma de fechamento entre as duas opções abaixo',
+        align: 'left'
+    }
+    
+]
+
 const UpFound = () => {
     return (
         <div className="App">
@@ -50,6 +74,7 @@ const UpFound = () => {
             />
             <Process
                 defaultColor="var(--color-sky-2)"
+                steps={steps}
             />
             <Plans
                 defaultColor="var(--color-sky-2)"

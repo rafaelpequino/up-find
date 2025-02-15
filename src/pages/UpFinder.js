@@ -24,6 +24,30 @@ const listTopics = [
     }
 ]
 
+const steps = [
+    {
+        title: '1 - Criação do projeto',
+        desc: 'Você irá preencher um formulário fornecendo todas as informações necessárias sobre o projeto',
+        align: 'right'
+    },
+    {
+        title: '2 - Direcionamento',
+        desc: 'Nosso algoritmo irá selecionar os desenvolvedores que mais se enquadram em suas necessidades',
+        align: 'left'
+    },
+    {
+        title: '3 - Contato e Orçamento',
+        desc: 'Até 3 profissionais entrarão em contato para fornecer informações e orçamentos',
+        align: 'right'
+    },
+    {
+        title: '4 - Fechamento',
+        desc: 'Após decidir qual o profissional que irá realizar o serviço, você poderá escolher uma das formas abaixo para finalizar a contratação',
+        align: 'left'
+    }
+    
+]
+
 const UpFinder = () => {
 
     return (
@@ -51,6 +75,7 @@ const UpFinder = () => {
             />
             <Process
                 defaultColor="var(--color-sky-1)"
+                steps={steps}
             />
             <Plans
                 defaultColor="var(--color-sky-1)"

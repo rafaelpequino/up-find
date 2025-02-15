@@ -2,30 +2,6 @@ import styled from "styled-components";
 import { StyledSpan, Title } from "../Title";
 import StepProcess from "../StepProcess";
 
-const steps = [
-    {
-        title: '1 - Criação do projeto',
-        desc: 'Você irá preencher um formulário fornecendo todas as informações necessárias sobre o projeto',
-        align: 'right'
-    },
-    {
-        title: '2 - Direcionamento',
-        desc: 'Nosso algoritmo irá selecionar os desenvolvedores que mais se enquadram em suas necessidades',
-        align: 'left'
-    },
-    {
-        title: '3 - Contato e Orçamento',
-        desc: 'Até 3 profissionais entrarão em contato para fornecer informações e orçamentos',
-        align: 'right'
-    },
-    {
-        title: '4 - Fechamento',
-        desc: 'Após decidir qual o profissional que irá realizar o serviço, você poderá escolher uma das formas abaixo para finalizar a contratação',
-        align: 'left'
-    }
-    
-]
-
 const ProcessContainer = styled.section`
     max-width: 100%;
     background-color: var(--color-black);
@@ -53,20 +29,21 @@ const CenterLine = styled.div`
     }
 `
 
-const Process = () => {
+const Process = (props) => {
     return (
         <ProcessContainer>
             <Title 
                 $color="var(--color-white)" 
                 $align="center"
             >
-                Cada passo do <StyledSpan $color="var(--color-sky-1)">processo</StyledSpan> é pensado em você
+                Cada passo do <StyledSpan $color={ props.defaultColor }>processo</StyledSpan> é pensado em você
             </Title>
             <StepByStep>
-                { steps.map( step => (
+                { props.steps.map( step => (
                     <StepProcess 
                         key={step.title}
-                        titleColor="var(--color-sky-1)" 
+                        titleColor={ props.defaultColor } 
+                        circleColor={ props.defaultColor } 
                         align={step.align} 
                         titleText={step.title} 
                         desc={step.desc} /> 
