@@ -9,6 +9,21 @@ import EndCta from "../components/EndCta"
 import Footer from "../components/Footer"
 import { StyledSpan } from "../components/Title"
 
+const listTopics = [
+    {
+        icon: 'document',
+        text: 'Receba o contato direto de leads qualificados'
+    },
+    {
+        icon: 'web',
+        text: 'Tudo feito 100% online, sem sair de casa'
+    },
+    {
+        icon: 'lock',
+        text: 'Garanta sua segurança com o modo UpSafety'
+    }
+]
+
 const UpFound = () => {
     return (
         <div className="App">
@@ -30,6 +45,8 @@ const UpFound = () => {
 
             <Topics
                 defaultColor="var(--color-sky-2)"
+                defaultFilter="invert(38%) sepia(90%) saturate(1586%) hue-rotate(255deg) brightness(90%) contrast(97%)"
+                list={listTopics}
             />
             <Process
                 defaultColor="var(--color-sky-2)"

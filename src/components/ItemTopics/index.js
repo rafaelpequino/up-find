@@ -4,7 +4,7 @@ import { Paragraph } from "../Paragraph";
 const Icon = styled.img`
     display: block;
     width: 50px;
-    filter: invert(1);
+    filter: ${ props => props.$filter || 'invert(1)'};
     text-align: center;
     margin: auto;
 `
@@ -12,12 +12,12 @@ const Icon = styled.img`
 const ItemTopics = (props) => {
     return (
         <div>
-            <Icon src={'/img/icons/' + props.icon + '.svg'} alt="Ícone" />
-            <Paragraph 
-                $align="center" 
+            <Icon src={'/img/icons/' + props.icon + '.svg'} alt="Ícone" $filter={props.$filter}/>
+            <Paragraph
+                $align="center"
                 $color="var(--color-white)"
             >
-                { props.text }
+                {props.text}
             </Paragraph>
         </div>
     )

@@ -26,22 +26,18 @@ const ListTopics = styled.div`
     }
 `
 
-const Topics = () => {
+const Topics = (props) => {
     return (
         <TopicsContainer>
             <ListTopics>
-                <ItemTopics
-                    icon="document"
-                    text="Recebe até 3 orçamentos de especialistas"
-                />
-                <ItemTopics
-                    icon="web"
-                    text="Tudo feito 100% online, sem sair de casa"
-                />
-                <ItemTopics
-                    icon="lock"
-                    text="Garanta sua segurança com o modo UpSafety"
-                />
+                {props.list.map(item => (
+                    <ItemTopics
+                        icon={item.icon}
+                        text={item.text}
+                        $color={props.defaultColor}
+                        $filter={props.defaultFilter}
+                    />
+                ))}
             </ListTopics>
         </TopicsContainer>
     )
