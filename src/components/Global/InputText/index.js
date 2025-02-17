@@ -14,12 +14,16 @@ const InputContainer = styled.div`
     & input {
         display: block;
         width: 100%;
-        border: 1px solid var(--color-white);
-        padding: 14px 20px;
+        padding: 16px 20px;
         border-radius: 10px;
-        background-color: transparent;
-        border: 1px solid #A0A0A0;
+        background-color:rgb(36, 36, 36);
+        border: none;
         color: var(--color-white);
+    }
+
+    & input:focus {
+    outline: none;
+        border: 1px solid var(--color-sky-2);
     }
 `
 

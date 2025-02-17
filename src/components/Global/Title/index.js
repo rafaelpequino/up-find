@@ -5,6 +5,7 @@ export const Title = styled.h2`
     color: ${props => props.$color || 'var(--color-black)'};
     text-align: ${props => props.$align || 'center'};
     margin: 0 ${props => props.$marginSides || 'auto'} 30px;
+    opacity: ${props => props.$opacity || '1'};
     padding: 0;
     max-width: 850px;
     font-weight: 700;

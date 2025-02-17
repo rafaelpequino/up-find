@@ -12,7 +12,7 @@ export const Button = styled.button.withConfig({
     margin: ${props => props.$defaultMargin || '0'};
     border: 2px solid ${props => props.setBorderColor || 'var(--color-white)'};
     background-color: ${props => props.setBackgroundColor || 'transparent'};
-    padding: 14px 20px;
+    padding: 16px 20px;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;

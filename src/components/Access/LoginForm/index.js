@@ -9,6 +9,7 @@ const LoginContainer = styled.section`
     height: 100vh;
     background-color: var(--color-shadow-deep);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -16,11 +17,12 @@ const LoginContainer = styled.section`
 
 const BoxLogin = styled.div`
     width: 100%;
-    max-width: 400px;
-    border-width: 2px;
-    border-style: solid;
-    padding: 30px 20px;
-    border-radius: 15px;
+    max-width: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px 60px;
+    border-radius: 25px;
+    background-color: var(--color-shadow-soft);
+    box-shadow: 0 0 60px rgba(121, 20, 141, 0.1);
 `
 
 const BoxImgLogo = styled.img`
@@ -41,9 +43,16 @@ const ForgotPswLink = styled.a`
 const LoginForm = (props) => {
     return (
         <LoginContainer>
-            <BoxLogin style={{borderColor: props.defaultColor}}>
                 <BoxImgLogo src={'/img/iv/' + props.logo + '.png'} alt="Logo da UpFind" />
-                <Subtitle $color="var(--color-white)" $size="20px">Bem-vindo de volta, { props.username }</Subtitle>
+            <BoxLogin>
+                <Subtitle 
+                    $color="var(--color-white)" 
+                    $opacity=".2" 
+                    $size="40px"
+                    $weight="400"
+                >
+                    Acesse sua conta
+                </Subtitle>
                 <br />
                 <InputText
                     label="Email"
@@ -74,15 +83,6 @@ const LoginForm = (props) => {
                     $margin="10px 0"
                 >
                     Não tem uma conta? <a href="#">Cadastre-se</a>
-                </Paragraph>
-                <Paragraph
-                    $align="center"
-                    $color="var(--color-white)"
-                    $opacity=".8"
-                    $linkColor={props.defaultColor}
-                    $margin="10px 0"
-                >
-                    É desenvolvedor? <a href="#">Entre aqui</a>
                 </Paragraph>
             </BoxLogin>
         </LoginContainer>
