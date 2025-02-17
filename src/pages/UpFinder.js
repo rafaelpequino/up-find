@@ -48,6 +48,17 @@ const steps = [
     
 ]
 
+const loosePlan = [
+    "Pagamento e contratação são realizados diretamente com o cliente",
+    "Não nos responsabilizamos por eventuais problemas com o projeto ou pagamento"
+]
+
+const upSafetyPlan = [
+    "Pagamento e contratação são realizados através da plataforma",
+    "Pagamento e contratação são realizados diretamente através da plataforma",
+    "Mais segurança para você, para o cliente e para o projeto"
+]
+
 const UpFinder = () => {
 
     return (
@@ -79,6 +90,9 @@ const UpFinder = () => {
             />
             <Plans
                 defaultColor="var(--color-sky-1)"
+                cta="Criar Projeto"
+                loosePlan={loosePlan}
+                upSafetyPlan={upSafetyPlan}
             />
             <Depoiments
                 defaultColor="var(--color-sky-1)"

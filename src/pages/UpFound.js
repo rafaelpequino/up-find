@@ -48,6 +48,17 @@ const steps = [
     
 ]
 
+const loosePlan = [
+    "Pagamento e contratação são realizados diretamente com o profissional",
+    "Não nos responsabilizamos por eventuais problemas com o projeto ou pagamento"
+]
+
+const upSafetyPlan = [
+    "Pagamento e contratação são realizados através da plataforma",
+    "Qualquer eventual problema será resolvido diretamente pela plataforma",
+    "Mais segurança para você, para o cliente e para o projeto"
+]
+
 const UpFound = () => {
     return (
         <div className="App">
@@ -78,6 +89,9 @@ const UpFound = () => {
             />
             <Plans
                 defaultColor="var(--color-sky-2)"
+                cta="Buscar Projeto"
+                loosePlan={loosePlan}
+                upSafetyPlan={upSafetyPlan}
             />
             <Depoiments
                 defaultColor="var(--color-sky-2)"

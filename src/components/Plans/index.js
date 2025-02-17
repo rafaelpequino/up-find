@@ -47,39 +47,36 @@ const Loose = styled.div`
 `
 
 const UpSafety = styled(Loose)`
-    background-color: var(--color-sky-1);
     border-radius: 15px;
 `
 
-const Plans = () => {
+const Plans = (props) => {
     return (
         <PlansContainer>
             <Title 
                 $color="var(--color-white)" 
                 $align="center"
             >
-                Você decide como o projeto será <StyledSpan $color="var(--color-sky-1)">fechado</StyledSpan>
+                Você decide como o projeto será <StyledSpan $color={props.defaultColor}>fechado</StyledSpan>
             </Title>
             <PlansComparison>
                 <Loose>
                     <Subtitle>Avulso</Subtitle>
                     <br />
-                    <ItemPlans icon="x" text="Pagamento e contratação são realizados diretamente com o profissional" />
-                    <br />
-                    <ItemPlans icon="x" text="Não nos responsabilizamos por eventuais problemas com o projeto ou pagamento" />
+                    { props.loosePlan.map((item, index) => (
+                        <ItemPlans key={index} icon="x" text={item} />
+                    )) }
                 </Loose>
-                <UpSafety>
+                <UpSafety style={{backgroundColor: props.defaultColor}}>
                     <Subtitle $color="var(--color-white)">UpSafety</Subtitle>
                     <br />
-                    <ItemPlans icon="check" text="Pagamento e contratação são realizados diretamente através da plataforma" />
-                    <br />
-                    <ItemPlans icon="check" text="Qualquer problema será resolvido diretamente pela plataforma" />
-                    <br />
-                    <ItemPlans icon="check" text="Mais segurança para você, para o profissional e para o projeto" />
+                    { props.upSafetyPlan.map((item, index) => (
+                        <ItemPlans key={index} icon="check" text={item} />
+                    )) }
                 </UpSafety>
             </PlansComparison>
             
-            <Button setBorderColor="var(--color-sky-1)" setBackgroundColor="transparent">Criar Projeto</Button>
+            <Button setBorderColor={props.defaultColor} setBackgroundColor="transparent">{ props.cta }</Button>
         </PlansContainer>
     )
 }
