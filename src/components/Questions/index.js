@@ -20,50 +20,21 @@ const ListQuestions = styled.div`
     }
 `
 
-const questionsList = [
-    {
-        key: 'question01',
-        question: 'Preciso pagar para criar um projeto?',
-        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
-    },
-    {
-        key: 'question02',
-        question: 'Como os desenvolvedores são escolhidos para o projeto?',
-        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
-    },
-    {
-        key: 'question03',
-        question: 'Como funciona o pagamento pelo modo UpSafety?',
-        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
-    },
-    {
-        key: 'question04',
-        question: 'A plataforma oferece garantia caso o serviço não seja entregue?',
-        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
-    },
-    {
-        key: 'question05',
-        question: 'Posso contratar desenvolvedores para trabalhos contínuos ou recorrentes?',
-        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
-    },
-    {
-        key: 'question06',
-        question: 'O que faço se tiver um problema com um profissional?',
-        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
-    }
-]
-
-const Questions = () => {
+const Questions = (props) => {
     return (
         <QuestionsContainer>
             <Title 
                 $color="var(--color-white)" 
             >
-                <StyledSpan $color="var(--color-sky-1)">Dúvidas</StyledSpan> Frequentes
+                <StyledSpan $color={props.defaultColor}>Dúvidas</StyledSpan> Frequentes
             </Title>
             <ListQuestions>
-                {questionsList.map(question => (
-                    <ItemQuestion question={question.question} key={question.key}>
+                {props.questionsList.map(question => (
+                    <ItemQuestion 
+                        question={question.question} 
+                        key={question.key} 
+                        color={props.defaultColor}
+                    >
                         <Paragraph 
                             $color="var(--color-white)" 
                             $margin="0 0 20px" 

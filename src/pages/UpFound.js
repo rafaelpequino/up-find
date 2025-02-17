@@ -77,6 +77,38 @@ const depoimentsList = [
     }
 ];
 
+const questionsList = [
+    {
+        key: 'question01',
+        question: 'Preciso pagar para me cadastrar?',
+        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
+    },
+    {
+        key: 'question02',
+        question: 'Quanto custa?',
+        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
+    },
+    {
+        key: 'question03',
+        question: 'Como funciona o pagamento pelo modo UpSafety?',
+        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
+    },
+    {
+        key: 'question04',
+        question: 'A plataforma oferece garantia em relação ao pagamento?',
+        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
+    },
+    {
+        key: 'question05',
+        question: 'Posso fechar o serviço por fora da plataforma?',
+        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
+    },
+    {
+        key: 'question06',
+        question: 'O que faço se tiver um problema com um cliente?',
+        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
+    }
+]
 
 const UpFound = () => {
     return (
@@ -119,6 +151,7 @@ const UpFound = () => {
             />
             <Questions
                 defaultColor="var(--color-sky-2)"
+                questionsList={questionsList}
             />
             <EndCta
                 defaultColor="var(--color-sky-2)"

@@ -6,7 +6,8 @@ const ItemQuestionContainer = styled.div`
     width: 100%;
     padding: 0 20px;
     border-radius: 15px;
-    border: 2px solid var(--color-sky-1);
+    border-width: 1px;
+    border-style: solid;
     margin: 20px 0;
 `
 
@@ -20,21 +21,23 @@ const DivQuestion = styled.div`
     & img {
         width: 30px;
         filter: invert(1);
+        transition: .2s
     }
 `
 
-const ItemQuestion = ({ question, children }) => {
+const ItemQuestion = ({ question, children, color }) => {
     const [isOpened, setIsOpened] = useState(false)
 
     return (
-        <ItemQuestionContainer>
+        <ItemQuestionContainer style={{ borderColor: color }}>
             <DivQuestion onClick={() => setIsOpened(!isOpened)}>
                 <Paragraph 
-                    $color="var(--color-white)"
+                    style={{transition: '.2s'}}
+                    $color={isOpened ? color : 'var(--color-white)'}
                 >
                     <strong>{question}</strong>
                 </Paragraph>
-                <img src="/img/icons/bottom-arrow.svg" alt="Ícone de seta para baixo" />
+                <img src="/img/icons/bottom-arrow.svg" alt="Ícone de seta para baixo" style={{ transform: isOpened ? 'rotate(180deg)' : 'rotate(0deg)' }}  />
             </DivQuestion>
             {isOpened && children}
         </ItemQuestionContainer>

@@ -77,6 +77,40 @@ const depoimentsList = [
     }
 ];
 
+const questionsList = [
+    {
+        key: 'question01',
+        question: 'Preciso pagar para criar um projeto?',
+        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
+    },
+    {
+        key: 'question02',
+        question: 'Como os desenvolvedores são escolhidos para o projeto?',
+        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
+    },
+    {
+        key: 'question03',
+        question: 'Como funciona o pagamento pelo modo UpSafety?',
+        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
+    },
+    {
+        key: 'question04',
+        question: 'A plataforma oferece garantia caso o serviço não seja entregue?',
+        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
+    },
+    {
+        key: 'question05',
+        question: 'Posso contratar desenvolvedores para trabalhos contínuos ou recorrentes?',
+        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
+    },
+    {
+        key: 'question06',
+        question: 'O que faço se tiver um problema com um profissional?',
+        answer: 'Não. Você apenas paga pelos trabalhos que contratar. Não existe nenhum custo adicional por parte da plataforma.'
+    }
+]
+
+
 const UpFinder = () => {
 
     return (
@@ -119,6 +153,7 @@ const UpFinder = () => {
             />
             <Questions
                 defaultColor="var(--color-sky-1)"
+                questionsList={questionsList}
             />
             <EndCta
                 defaultColor="var(--color-sky-1)"
