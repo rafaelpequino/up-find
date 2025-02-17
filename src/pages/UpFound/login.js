@@ -1,6 +1,12 @@
+import LoginForm from "../../components/Access/LoginForm"
+
 const Login = () => {
     return (
-        <section></section>
+        <LoginForm
+            defaultColor="var(--color-sky-2)"
+            username="UpFound"
+            logo="first-logo-for-devs"     
+        />
     )
 }
 
