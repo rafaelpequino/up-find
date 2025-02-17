@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Paragraph } from "../Paragraph";
-import { StyledSpan, Title } from "../Title";
+import { Paragraph } from "../../Global/Paragraph";
+import { StyledSpan, Title } from "../../Global/Title";
 import { useNavigate } from "react-router-dom";
 
 const ChooseContainer = styled.section`

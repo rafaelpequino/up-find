@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { StyledSpan, Title } from "../Title"
-import { Button } from "../Button"
+import { StyledSpan, Title } from "../../Global/Title"
+import { Button } from "../../Global/Button"
 
 const EndCtaContainer = styled.section`
     max-width: 100%;

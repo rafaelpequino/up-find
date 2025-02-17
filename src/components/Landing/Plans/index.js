@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import ItemPlans from "../ItemPlans";
-import { StyledSpan, Title } from "../Title";
-import { Subtitle } from "../Subtitle";
-import { Button } from "../Button";
+import { StyledSpan, Title } from "../../Global/Title";
+import { Subtitle } from "../../Global/Subtitle";
+import { Button } from "../../Global/Button"
 
 const PlansContainer = styled.section`
     max-width: 100%;

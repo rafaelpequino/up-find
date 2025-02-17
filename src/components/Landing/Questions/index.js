@@ -1,7 +1,7 @@
 import ItemQuestion from '../ItemQuestion';
-import { StyledSpan, Title } from '../Title';
+import { StyledSpan, Title } from '../../Global/Title';
 import styled from 'styled-components';
-import { Paragraph } from '../Paragraph';
+import { Paragraph } from '../../Global/Paragraph';
 
 const QuestionsContainer = styled.section`
     width: 100%;

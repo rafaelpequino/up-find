@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { StyledSpan, Title } from "../Title";
+import { StyledSpan, Title } from "../../Global/Title";
 import StepProcess from "../StepProcess";
 
 const ProcessContainer = styled.section`

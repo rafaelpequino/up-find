@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Paragraph } from "../Paragraph";
-import { Title } from "../Title";
-import { Button } from "../Button";
+import { Paragraph } from "../../Global/Paragraph";
+import { Title } from "../../Global/Title";
+import { Button } from "../../Global/Button"
 
 const WelcomeContainer = styled.section`
     width: 100%;

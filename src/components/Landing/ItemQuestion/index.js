@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Paragraph } from '../Paragraph';
+import { Paragraph } from '../../Global/Paragraph';
 import { useState } from 'react';
 
 const ItemQuestionContainer = styled.div`

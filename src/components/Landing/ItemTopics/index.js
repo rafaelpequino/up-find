@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Paragraph } from "../Paragraph";
+import { Paragraph } from "../../Global/Paragraph";
 
 const Icon = styled.img`
     display: block;

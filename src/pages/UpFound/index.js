@@ -1,13 +1,13 @@
-import Depoiments from "../components/Depoiments"
-import Header from "../components/Header"
-import Plans from "../components/Plans"
-import Process from "../components/Process"
-import Questions from "../components/Questions"
-import Topics from "../components/Topics"
-import Welcome from "../components/Welcome"
-import EndCta from "../components/EndCta"
-import Footer from "../components/Footer"
-import { StyledSpan } from "../components/Title"
+import Depoiments from "../../components/Landing/Depoiments"
+import Header from "../../components/Landing/Header"
+import Plans from "../../components/Landing/Plans"
+import Process from "../../components/Landing/Process"
+import Questions from "../../components/Landing/Questions"
+import Topics from "../../components/Landing/Topics"
+import Welcome from "../../components/Landing/Welcome"
+import EndCta from "../../components/Landing/EndCta"
+import Footer from "../../components/Landing/Footer"
+import { StyledSpan } from "../../components/Global/Title"
 
 const listTopics = [
     {

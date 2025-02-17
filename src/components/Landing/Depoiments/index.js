@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { StyledSpan, Title } from "../Title";
+import { StyledSpan, Title } from "../../Global/Title";
 import ItemDepoiment from "../ItemDepoiment";
-import { Paragraph } from "../Paragraph";
+import { Paragraph } from "../../Global/Paragraph";
 
 const DepoimentsContainer = styled.section`
     width: 100%;

@@ -1,6 +1,6 @@
 import './App.css';
-import Choose from './components/Choose';
-import { SimpleFooter } from './components/SimpleFooter';
+import Choose from './components/Home/Choose';
+import { SimpleFooter } from './components/Home/SimpleFooter';
 
 function App() {
   return (
