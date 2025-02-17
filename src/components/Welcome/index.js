@@ -26,7 +26,7 @@ const WelcomeContainer = styled.section`
         background-image: var(--bkg-url);
         background-size: cover;
         background-position: center;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.7);
         background-blend-mode: darken;
         background-attachment: fixed;
         transition: transform 0.3s ease-in-out;
