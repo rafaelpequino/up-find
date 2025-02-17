@@ -76,7 +76,6 @@ const ImgInsideMobile = styled.img`
     width: 50px;
     filter: invert(1);
     padding: 11px 15px;
-    border: 2px solid var(--color-black);
     border-radius: 20px;
 `;
 
