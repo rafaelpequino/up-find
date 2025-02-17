@@ -110,6 +110,63 @@ const questionsList = [
     }
 ]
 
+const upFindFooterItems = [
+    {
+        link: "#",
+        text: "Quem Somos"
+    },
+    {
+        link: "#",
+        text: "Como Funciona"
+    },
+    {
+        link: "#",
+        text: "Dúvidas Frequentes"
+    },
+    {
+        link: "#",
+        text: "Trabalhe Conosco"
+    }
+]
+
+const quickAccessFooterItems = [
+    {
+        link: "#",
+        text: "Dados Pessoais"
+    },
+    {
+        link: "#",
+        text: "Dados Profissionais"
+    },
+    {
+        link: "#",
+        text: "Meus Projetos"
+    },
+    {
+        link: "#",
+        text: "Financeiro"
+    },
+    {
+        link: "#",
+        text: "Buscar Projetos"
+    }
+]
+
+const documentsFooterItems = [
+    {
+        link: "#",
+        text: "Preciso de Ajuda"
+    },
+    {
+        link: "#",
+        text: "Termos de Uso"
+    },
+    {
+        link: "#",
+        text: "Políticas de Privacidade"
+    }
+]
+
 const UpFound = () => {
     return (
         <div className="App">
@@ -158,6 +215,9 @@ const UpFound = () => {
             />
             <Footer
                 defaultColor="var(--color-sky-2)"
+                upFindFooterItems={upFindFooterItems}
+                quickAccessFooterItems={quickAccessFooterItems}
+                documentsFooterItems={documentsFooterItems}
             />
         </div>
     )

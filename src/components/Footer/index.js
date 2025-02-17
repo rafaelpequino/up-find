@@ -83,10 +83,9 @@ const Footer = (props) => {
                         <strong>UpFind</strong>
                     </Paragraph>
                     <List>
-                        <li><a href="#">Quem Somos</a></li>
-                        <li><a href="#">Como Funciona</a></li>
-                        <li><a href="#">Dúvidas Frequentes</a></li>
-                        <li><a href="#">Trabalhe Conosco</a></li>
+                        {props.upFindFooterItems.map(item => (
+                            <li><a href={item.link}>{item.text}</a></li>
+                        ))}
                     </List>
                 </div>
                 <div>
@@ -96,9 +95,9 @@ const Footer = (props) => {
                         <strong>Acesso Rápido</strong>
                     </Paragraph>
                     <List>
-                        <li><a href="#">Dados Pessoais</a></li>
-                        <li><a href="#">Meus Projetos</a></li>
-                        <li><a href="#">Histórico de Pagamentos</a></li>
+                        {props.quickAccessFooterItems.map(item => (
+                            <li><a href={item.link}>{item.text}</a></li>
+                        ))}
                     </List>
                 </div>
                 <div>
@@ -108,9 +107,9 @@ const Footer = (props) => {
                         <strong>Documentos</strong>
                     </Paragraph>
                     <List>
-                        <li><a href="#">Preciso de Ajuda</a></li>
-                        <li><a href="#">Termos de Uso</a></li>
-                        <li><a href="#">Politicas de Privacidade</a></li>
+                        {props.documentsFooterItems.map(item => (
+                            <li><a href={item.link}>{item.text}</a></li>
+                        ))}
                     </List>
                 </div>
             </DivInsideFooter>

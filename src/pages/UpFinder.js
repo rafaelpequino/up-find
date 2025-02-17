@@ -110,6 +110,54 @@ const questionsList = [
     }
 ]
 
+const upFindFooterItems = [
+    {
+        link: "#",
+        text: "Quem Somos"
+    },
+    {
+        link: "#",
+        text: "Como Funciona"
+    },
+    {
+        link: "#",
+        text: "Dúvidas Frequentes"
+    },
+    {
+        link: "#",
+        text: "Trabalhe Conosco"
+    }
+]
+
+const quickAccessFooterItems = [
+    {
+        link: "#",
+        text: "Dados Pessoais"
+    },
+    {
+        link: "#",
+        text: "Meus Projetos"
+    },
+    {
+        link: "#",
+        text: "Histórico de Pagamentos"
+    }
+]
+
+const documentsFooterItems = [
+    {
+        link: "#",
+        text: "Preciso de Ajuda"
+    },
+    {
+        link: "#",
+        text: "Termos de Uso"
+    },
+    {
+        link: "#",
+        text: "Políticas de Privacidade"
+    }
+]
 
 const UpFinder = () => {
 
@@ -160,6 +208,9 @@ const UpFinder = () => {
             />
             <Footer
                 defaultColor="var(--color-sky-1)"
+                upFindFooterItems={upFindFooterItems}
+                quickAccessFooterItems={quickAccessFooterItems}
+                documentsFooterItems={documentsFooterItems}
             />
         </div>
     )
