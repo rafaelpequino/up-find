@@ -31,7 +31,7 @@ const BoxLogin = styled.div`
 const BoxImgLogo = styled.img`
     display: block;
     width: 100%;
-    max-width: 120px;
+    max-width: 150px;
     margin: 0 auto 30px;
 `
 
