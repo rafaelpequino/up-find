@@ -11,6 +11,11 @@ export const Paragraph = styled.p`
     margin: ${ props => props.$margin || '20px 0' };
     opacity: ${ props => props.$opacity || '1' };
 
+    & a {
+        text-decoration: none;
+        color: ${ props => props.$linkColor || props.$color || 'var(--color-black)' };
+    }
+
     @media (max-width: 768px) {
         font-size: 16px;
     }
