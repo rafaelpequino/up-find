@@ -1,15 +1,13 @@
 import styled from "styled-components"
-import { Paragraph } from "../Paragraph";
 
 const IconMarks = styled.img`
     width: 70px;
-    filter: invert(30%) sepia(99%) saturate(7493%) hue-rotate(200deg) brightness(103%) contrast(102%);    
 `
 
-const ItemDepoiment = ({ children }) => {
+const ItemDepoiment = ({ children, $filter }) => {
     return (
         <div>
-            <IconMarks src="/img/icons/marks.svg" />
+            <IconMarks src="/img/icons/marks.svg" style={{filter: $filter}} />
             { children }
         </div>
     )

@@ -29,37 +29,22 @@ const ListDepoiments = styled.div`
     }
 `
 
-const depoimentsList = [
-    {
-        text: 'Fui muito bem atendida, o profissional foi muito educado e fez um trabalho de qualidade. Valeu a pena, orçamento grátis e não é careiro.',
-        name: 'Ana Paula',
-        desc: 'contratou João Pedro'
-    },
-    {
-        text: 'Os profissionais são pessoas dedicadas com seus serviços. Tudo o que é pedido é feito da maneira como foi pedido. Aprovado!',
-        name: 'Jorge',
-        desc: 'contratou Alícia'
-    },
-    {
-        text: 'Um excelente profissional, pontual e acima de tudo confiável. Foi bastante educado e atencioso com o trabalho, recomendo.',
-        name: 'Osvaldo',
-        desc: 'contratou Rafael'
-    }
-];
 
-
-const Depoiments = () => {
+const Depoiments = (props) => {
     return (
         <DepoimentsContainer>
             <InsideDepoiments>
                 <Title 
                     $color="var(--color-white)" 
                 >
-                    Nossos clientes <StyledSpan $color="var(--color-sky-1)">recomendam</StyledSpan>
+                    Nossos clientes <StyledSpan $color={props.defaultColor}>recomendam</StyledSpan>
                 </Title>
                 <ListDepoiments>
-                    {depoimentsList.map(depoiment => (
-                        <ItemDepoiment key={depoiment.name}>
+                    {props.depoimentsList.map(depoiment => (
+                        <ItemDepoiment 
+                            key={depoiment.name}
+                            $filter={props.defaultFilter}
+                        >
                             <Paragraph 
                                 $color="var(--color-white)"
                             >
@@ -69,7 +54,7 @@ const Depoiments = () => {
                             <Paragraph 
                                 $color="var(--color-white)"
                             >
-                                <StyledSpan $color="var(--color-sky-1)">{ depoiment.name }</StyledSpan> {depoiment.desc}
+                                <StyledSpan $color={props.defaultColor}>{ depoiment.name }</StyledSpan> {depoiment.desc}
                             </Paragraph>
                         </ItemDepoiment>)
                     )}

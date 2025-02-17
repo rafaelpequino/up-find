@@ -59,6 +59,25 @@ const upSafetyPlan = [
     "Mais segurança para você, para o cliente e para o projeto"
 ]
 
+const depoimentsList = [
+    {
+        text: 'Fui muito bem atendida, o profissional foi muito educado e fez um trabalho de qualidade. Valeu a pena, orçamento grátis e não é careiro.',
+        name: 'João Pedro',
+        desc: ' - desenvolvedor frontend'
+    },
+    {
+        text: 'Os profissionais são pessoas dedicadas com seus serviços. Tudo o que é pedido é feito da maneira como foi pedido. Aprovado!',
+        name: 'Jorge',
+        desc: ' - desenvolvedor backend'
+    },
+    {
+        text: 'Um excelente profissional, pontual e acima de tudo confiável. Foi bastante educado e atencioso com o trabalho, recomendo.',
+        name: 'Osvaldo',
+        desc: ' - desenvolvedor mobile'
+    }
+];
+
+
 const UpFound = () => {
     return (
         <div className="App">
@@ -95,6 +114,8 @@ const UpFound = () => {
             />
             <Depoiments
                 defaultColor="var(--color-sky-2)"
+                defaultFilter="invert(38%) sepia(90%) saturate(1586%) hue-rotate(255deg) brightness(90%) contrast(97%)"
+                depoimentsList={depoimentsList}
             />
             <Questions
                 defaultColor="var(--color-sky-2)"

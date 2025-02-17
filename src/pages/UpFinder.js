@@ -59,6 +59,24 @@ const upSafetyPlan = [
     "Mais segurança para você, para o cliente e para o projeto"
 ]
 
+const depoimentsList = [
+    {
+        text: 'Fui muito bem atendida, o profissional foi muito educado e fez um trabalho de qualidade. Valeu a pena, orçamento grátis e não é careiro.',
+        name: 'Ana Paula',
+        desc: 'contratou João Pedro'
+    },
+    {
+        text: 'Os profissionais são pessoas dedicadas com seus serviços. Tudo o que é pedido é feito da maneira como foi pedido. Aprovado!',
+        name: 'Jorge',
+        desc: 'contratou Alícia'
+    },
+    {
+        text: 'Um excelente profissional, pontual e acima de tudo confiável. Foi bastante educado e atencioso com o trabalho, recomendo.',
+        name: 'Osvaldo',
+        desc: 'contratou Rafael'
+    }
+];
+
 const UpFinder = () => {
 
     return (
@@ -96,6 +114,8 @@ const UpFinder = () => {
             />
             <Depoiments
                 defaultColor="var(--color-sky-1)"
+                defaultFilter="invert(27%) sepia(98%) saturate(7041%) hue-rotate(202deg) brightness(99%) contrast(104%)"
+                depoimentsList={depoimentsList}
             />
             <Questions
                 defaultColor="var(--color-sky-1)"
