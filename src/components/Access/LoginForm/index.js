@@ -22,14 +22,17 @@ const BoxLogin = styled.div`
     padding: 40px 60px;
     border-radius: 25px;
     background-color: var(--color-shadow-soft);
-    box-shadow: 0 0 60px rgba(121, 20, 141, 0.1);
+
+    @media (max-width: 768px) {
+        padding: 40px 20px;
+    }
 `
 
 const BoxImgLogo = styled.img`
     display: block;
     width: 100%;
     max-width: 120px;
-    margin: 15px auto 30px;
+    margin: 0 auto 30px;
 `
 
 const ForgotPswLink = styled.a`
@@ -43,17 +46,17 @@ const ForgotPswLink = styled.a`
 const LoginForm = (props) => {
     return (
         <LoginContainer>
-                <BoxImgLogo src={'/img/iv/' + props.logo + '.png'} alt="Logo da UpFind" />
-            <BoxLogin>
+            <BoxImgLogo src={'/img/iv/' + props.logo + '.png'} alt="Logo da UpFind" />
+            <BoxLogin style={{ boxShadow: `0 0 60px ${props.shadowColor}` }}>
                 <Subtitle 
                     $color="var(--color-white)" 
                     $opacity=".2" 
                     $size="40px"
                     $weight="400"
+                    $margin="0 auto 30px"
                 >
                     Acesse sua conta
                 </Subtitle>
-                <br />
                 <InputText
                     label="Email"
                     name="email"

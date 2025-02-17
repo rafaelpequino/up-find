@@ -6,7 +6,11 @@ export const Subtitle = styled.h2`
     text-align: ${props => props.$align || 'center'};
     opacity: ${props => props.$opacity || '1'};
     font-weight: ${props => props.$weight || '700'};
-    margin: 10px auto;
+    margin: ${props => props.$margin || '10px auto'};
     padding: 0 20px;
     max-width: 800px;
+
+    @media (max-width: 500px) {
+        font-size: 24px;
+    }
 `;
