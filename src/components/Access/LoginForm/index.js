@@ -3,6 +3,7 @@ import { Subtitle } from "../../Global/Subtitle"
 import InputText from "../../Global/InputText"
 import { Button } from "../../Global/Button"
 import { Paragraph } from "../../Global/Paragraph"
+import { useNavigate } from "react-router-dom"
 
 const LoginContainer = styled.section`
     width: 100%;
@@ -46,6 +47,8 @@ const ForgotPswLink = styled.a`
 `
 
 const LoginForm = (props) => {
+    const navigate = useNavigate();
+
     return (
         <LoginContainer>
             <BoxImgLogo src={'/img/iv/' + props.logo + '.png'} alt="Logo da UpFind" />
@@ -89,7 +92,7 @@ const LoginForm = (props) => {
                     $linkColor={props.defaultColor}
                     $margin="10px 0"
                 >
-                    Não tem uma conta? <a href="#">Cadastre-se</a>
+                    Não possui uma conta? <button onClick={() => navigate(props.navigate + 'cadastro')}>Cadastre-se</button>
                 </Paragraph>
             </BoxLogin>
         </LoginContainer>

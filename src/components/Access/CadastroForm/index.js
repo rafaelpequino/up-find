@@ -3,6 +3,7 @@ import { Subtitle } from "../../Global/Subtitle"
 import InputText from "../../Global/InputText"
 import { Button } from "../../Global/Button"
 import { Paragraph } from "../../Global/Paragraph"
+import { useNavigate } from "react-router-dom"
 
 const CadastroContainer = styled.section`
     width: 100%;
@@ -58,6 +59,8 @@ const DoubleInput = styled.div`
 `
 
 const CadastroForm = (props) => {
+    const navigate = useNavigate();
+
     return (
         <CadastroContainer>
             <BoxImgLogo src={'/img/iv/' + props.logo + '.png'} alt="Logo da UpFind" />
@@ -133,7 +136,7 @@ const CadastroForm = (props) => {
                     $linkColor={props.defaultColor}
                     $margin="10px auto"
                 >
-                    Já possui uma conta? <a href="#">Entre</a>
+                    Já possui uma conta? <button onClick={() => navigate(props.navigate + 'login')}>Entre</button>
                 </Paragraph>
             </BoxCadastro>
         </CadastroContainer>

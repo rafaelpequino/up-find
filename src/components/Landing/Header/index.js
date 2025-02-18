@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const HeaderContainer = styled.header.withConfig({
     shouldForwardProp: (prop) => prop !== 'isScrolled'
@@ -37,19 +38,24 @@ const LinksContainer = styled.div`
     gap: 30px;
 `;
 
-const LinkLogin = styled.a`
+const LinkLogin = styled.button`
+    background-color: transparent;
+    border: none;
     color: var(--color-white);
     text-decoration: none;
     font-weight: normal;
     transition: color 0.3s ease;
     display: block;
+    cursor: pointer;
 
     @media (max-width: 768px) {
         display: none;
     }
 `;
 
-const LinkCadastro = styled.a`
+const LinkCadastro = styled.button`
+    background-color: transparent;
+    border: none;
     color: var(--color-white);
     text-decoration: none;
     font-weight: normal;
@@ -58,14 +64,18 @@ const LinkCadastro = styled.a`
     border-radius: 15px;
     border: 2px solid var(--color-white);
     display: block;
+    cursor: pointer;
 
     @media (max-width: 768px) {
         display: none;
     }
 `;
 
-const DivInsideMobile = styled.a`
+const DivInsideMobile = styled.button`
+    background-color: transparent;
+    border: none;
     display: none;
+    cursor: pointer;
 
     @media (max-width: 768px) {
         display: block;
@@ -80,6 +90,7 @@ const ImgInsideMobile = styled.img`
 `;
 
 const Header = (props) => {
+    const navigate = useNavigate();
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
@@ -99,9 +110,12 @@ const Header = (props) => {
         <HeaderContainer isScrolled={isScrolled}>
             <Logo src={props.logoPath} alt={props.logoSrc} />
             <LinksContainer>
-                <LinkLogin href={props.linkLogin}>Entrar</LinkLogin>
-                <LinkCadastro href={props.linkCadastro}>Cadastre-se</LinkCadastro>
-                <DivInsideMobile href="#"><ImgInsideMobile src="/img/icons/big-lock.svg" alt="Ícone de cadeado" /></DivInsideMobile>
+                <LinkLogin onClick={() => navigate("./login")}>Entrar</LinkLogin>
+                <LinkCadastro onClick={() => navigate("./cadastro")}>Cadastre-se</LinkCadastro>
+
+                <DivInsideMobile onClick={() => navigate("./login")}>
+                    <ImgInsideMobile src="/img/icons/big-lock.svg" alt="Ícone de cadeado" />
+                </DivInsideMobile>
             </LinksContainer>
         </HeaderContainer>
     );

@@ -5,8 +5,9 @@ const Login = () => {
         <LoginForm
             defaultColor="var(--color-sky-2)"
             username="UpFound"
-            logo="first-logo-for-devs"     
-            shadowColor="rgba(121, 20, 141, 0.1)"  
+            logo="first-logo-for-devs"
+            shadowColor="rgba(121, 20, 141, 0.1)"
+            navigate="/upfound/"
         />
     )
 }
