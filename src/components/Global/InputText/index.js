@@ -23,7 +23,7 @@ const InputContainer = styled.div`
 
     & input:focus {
     outline: none;
-        border: 1px solid var(--color-sky-2);
+        border: 1px solid var(--color-white);
     }
 `
 
@@ -31,7 +31,13 @@ const InputText = (props) => {
     return (
         <InputContainer>
             <label htmlFor={ props.name }>{ props.label }</label>
-            <input type={ props.type } name={ props.name } id={ 'input-' + props.name } required={ props.required || true }/>
+            <input 
+                type={ props.type } 
+                name={ props.name } 
+                id={ 'input-' + props.name } 
+                required={ props.required || true }
+                style={{borderColor: props.color}}    
+            />
         </InputContainer>
     )
 }

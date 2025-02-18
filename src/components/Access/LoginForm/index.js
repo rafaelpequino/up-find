@@ -61,11 +61,13 @@ const LoginForm = (props) => {
                     label="Email"
                     name="email"
                     type="email"
+                    color={props.defaultColor}
                 />
                 <InputText
                     label="Senha"
                     name="psw"
                     type="password"
+                    color={props.defaultColor}
                 />
                 <ForgotPswLink href="#" style={{color: props.defaultColor}}>Esqueceu a senha?</ForgotPswLink>
                 <br />
