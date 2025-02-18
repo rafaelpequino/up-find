@@ -175,6 +175,7 @@ const UpFinder = () => {
                 text="Encontre o melhor profissional para o seu projeto"
                 cta="Criar"
                 bkgUrl="/img/team.jpg"
+                bkgColorShadow="rgba(0, 0, 0, 0.85)"
             >
                 Os melhores <StyledSpan $color="var(--color-sky-1)">desenvolvedores</StyledSpan> reunidos em um só lugar
             </Welcome>

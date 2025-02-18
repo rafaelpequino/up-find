@@ -182,6 +182,7 @@ const UpFound = () => {
                 text="Leads qualificados para todo tipo de programador"
                 cta="Buscar"
                 bkgUrl="/img/code.jpg"
+                bkgColorShadow="rgba(0, 0, 0, .65)"
             >
                 Dev, esqueça a dificuldade para encontrar <StyledSpan $color="var(--color-sky-2)">clientes</StyledSpan>
             </Welcome>

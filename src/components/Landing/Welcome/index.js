@@ -26,7 +26,7 @@ const WelcomeContainer = styled.section`
         background-image: var(--bkg-url);
         background-size: cover;
         background-position: center;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: var(--bkg-color-shadow);
         background-blend-mode: darken;
         background-attachment: fixed;
         transition: transform 0.3s ease-in-out;
@@ -63,18 +63,23 @@ const DivButtons = styled.div`
 
 const Welcome = (props) => {
     return (
-        <WelcomeContainer style={{ '--bkg-url': `url(${props.bkgUrl || '/img/code.jpg'})` }}>
+        <WelcomeContainer
+            style={{
+                '--bkg-url': `url(${props.bkgUrl || '/img/code.jpg'})`,
+                '--bkg-color-shadow': props.bkgColorShadow || 'rgba(0, 0, 0, 0.7)'
+            }}
+        >
             <InsideWelcome>
-                <Title 
-                    $color="var(--color-white)" 
-                    $align="left" 
+                <Title
+                    $color="var(--color-white)"
+                    $align="left"
                     $marginSides="0"
                 >
                     {props.children}
                 </Title>
-                <Paragraph 
-                    $align="left" 
-                    $color="var(--color-white)" 
+                <Paragraph
+                    $align="left"
+                    $color="var(--color-white)"
                     $size="24px"
                 >
                     {props.text}
