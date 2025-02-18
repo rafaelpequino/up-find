@@ -123,7 +123,7 @@ const CadastroForm = (props) => {
                     setBackgroundColor={props.defaultColor}
                     $defaultMargin="20px 0 40px"
                 >
-                    Faça Cadastro
+                    Criar Cadastro
                 </Button>
 
                 <Paragraph

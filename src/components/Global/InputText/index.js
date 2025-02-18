@@ -23,7 +23,7 @@ const InputContainer = styled.div`
 
     & input:focus {
     outline: none;
-        border: 1px solid var(--color-white);
+        outline: 1px solid var(--color-white);
     }
 `
 
@@ -36,7 +36,7 @@ const InputText = (props) => {
                 name={ props.name } 
                 id={ 'input-' + props.name } 
                 required={ props.required || true }
-                style={{borderColor: props.color}}    
+                style={{outlineColor: props.color}}    
             />
         </InputContainer>
     )
