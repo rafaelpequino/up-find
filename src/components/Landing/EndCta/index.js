@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { StyledSpan, Title } from "../../Global/Title"
+import { Title } from "../../Global/Title"
 import { Button } from "../../Global/Button"
 
 const EndCtaContainer = styled.section`
@@ -21,7 +21,7 @@ const EndCta = (props) => {
                 $color="var(--color-white)" 
                 $size="45px"
             >
-                Vamos buscar o <StyledSpan $color={props.defaultColor}>melhor desenvolvedor</StyledSpan> para o <StyledSpan $color={props.defaultColor}>seu projeto</StyledSpan>?
+                { props.children }
             </Title>
             <br/>
             <Button setBorderColor={props.defaultColor} setBackgroundColor="transparent">Criar Projeto</Button>

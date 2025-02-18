@@ -205,7 +205,10 @@ const UpFinder = () => {
             />
             <EndCta
                 defaultColor="var(--color-sky-1)"
-            />
+            >
+                Vamos buscar o <StyledSpan $color="var(--color-sky-1)">melhor desenvolvedor</StyledSpan> para o <StyledSpan $color="var(--color-sky-1)">seu projeto</StyledSpan>?
+            </EndCta>
+            
             <Footer
                 defaultColor="var(--color-sky-1)"
                 upFindFooterItems={upFindFooterItems}
