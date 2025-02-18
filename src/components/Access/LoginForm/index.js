@@ -7,6 +7,7 @@ import { Paragraph } from "../../Global/Paragraph"
 const LoginContainer = styled.section`
     width: 100%;
     height: 100vh;
+    min-height: max-content;
     background-color: var(--color-shadow-deep);
     display: flex;
     flex-direction: column;
@@ -25,6 +26,7 @@ const BoxLogin = styled.div`
 
     @media (max-width: 768px) {
         padding: 40px 20px;
+        border-radius: 15px;
     }
 `
 
