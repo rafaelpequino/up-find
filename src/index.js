@@ -10,6 +10,7 @@ import LoginUpFinder from './pages/UpFinder/login';
 import LoginUpFound from './pages/UpFound/login';
 import CadastroUpFinder from './pages/UpFinder/cadastro';
 import CadastroUpFound from './pages/UpFound/cadastro';
+import SystemUpFound from './pages/UpFound/system';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: '/upfound/cadastro',
     element: <CadastroUpFound />,
+  },
+  {
+    path: '/upfound/system',
+    element: <SystemUpFound />,
   },
 ]);
 
