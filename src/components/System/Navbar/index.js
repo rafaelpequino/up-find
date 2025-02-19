@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 const NavbarContainer = styled.nav`
-    width: 80%;
-    max-width: 400px;
-    padding: 40px 20px;
+    min-width: max-content;
+    max-width: 320px;
 `
 
 const ImgLogo = styled.img`
