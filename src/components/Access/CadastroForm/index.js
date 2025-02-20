@@ -4,6 +4,7 @@ import InputText from "../../Global/InputText"
 import { Button } from "../../Global/Button"
 import { Paragraph } from "../../Global/Paragraph"
 import { useNavigate } from "react-router-dom"
+import { DoubleInput } from "../../Global/DoubleInput"
 
 const CadastroContainer = styled.section`
     width: 100%;
@@ -44,18 +45,6 @@ const ForgotPswLink = styled.a`
     text-decoration: none;
     margin-top: 5px;
     opacity: .8;
-`
-
-const DoubleInput = styled.div`
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 20px;
-
-    @media (max-width: 768px) {
-        grid-template-columns: repeat(1, 1fr);
-    }
 `
 
 const CadastroForm = (props) => {
