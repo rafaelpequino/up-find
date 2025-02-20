@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const InputContainer = styled.div`
     width: 100%;
-    margin-top: 20px;
 
     & label {
         display: block;
@@ -30,7 +29,7 @@ const InputContainer = styled.div`
 const InputText = (props) => {
     return (
         <InputContainer>
-            <label htmlFor={ props.name }>{ props.label }</label>
+            <label htmlFor={ 'input-' + props.name }>{ props.label }</label>
             <input 
                 type={ props.type } 
                 name={ props.name } 
