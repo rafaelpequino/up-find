@@ -68,6 +68,7 @@ const LoginForm = (props) => {
                     type="email"
                     color={props.defaultColor}
                 />
+                <br/>
                 <InputText
                     label="Senha"
                     name="psw"
