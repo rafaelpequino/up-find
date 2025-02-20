@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const NavbarContainer = styled.nav`
     min-width: max-content;
-    max-width: 320px;
 `
 
 const ImgLogo = styled.img`
@@ -31,7 +30,7 @@ const TopicsList = styled.ul`
         display: flex;
         align-items: center;
         gap: 15px;
-        padding: 0 20px 0 0;
+        padding: 5px 20px 5px 10px;
         border-raius: 10px;
         margin-bottom: 10px;
         cursor: pointer;
