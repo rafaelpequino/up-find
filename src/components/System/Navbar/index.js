@@ -13,7 +13,7 @@ const ImgLogo = styled.img`
 
 const TopicsSection = styled.div`
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
 `
 
 const TopicsSectionTitle = styled.div`
@@ -30,10 +30,10 @@ const TopicsList = styled.ul`
         width: 100%;
         display: flex;
         align-items: center;
-        gap: 20px;
-        padding: 10px 20px 10px 10px;
+        gap: 15px;
+        padding: 0 20px 0 0;
         border-raius: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         cursor: pointer;
         transition: .2s;
         border-radius: 10px;
@@ -61,7 +61,7 @@ const TopicsList = styled.ul`
         border-radius: 10px;
         background-color: var(--color-shadow-soft);
         color: var(--color-white);
-        padding: 5px;
+        padding: 4px;
     }
 
     & li span img {
