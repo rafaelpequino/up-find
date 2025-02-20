@@ -37,7 +37,9 @@ const System = () => {
                 
                 <div>
                     <Subheader />
-                    <Profile />
+                    <Profile
+                        defaultColor="var(--color-sky-1)"
+                    />
                 </div>
             </InsideSystemContainer>
         </SystemContainer>
