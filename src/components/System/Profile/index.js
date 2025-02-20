@@ -4,15 +4,7 @@ import { DoubleInput } from '../../Global/DoubleInput';
 import { Button } from '../../Global/Button';
 import InputText from '../../Global/InputText';
 import InputImg from '../../Global/InputImg';
-
-const SectionContainer = styled.section`
-    width: 100%;
-    height: max-contet;
-    background-color: var(--color-shadow-soft);
-    margin: 20px 0;
-    padding: 40px;
-    border-radius: 10px;
-`
+import { SectionContainer } from '../SectionContainer';
 
 const BtnContainer = styled.div`
     width: 100%;
@@ -84,6 +76,76 @@ const Profile = (props) => {
                         </Button>
                     </BtnContainer>
 
+                </DoubleInput>
+            </SectionContainer>
+
+            <SectionContainer>
+                <Subtitle
+                    $color="var(--color-white)"
+                    $align="left"
+                    $margin="0"
+                    $padding="0"
+
+                >
+                    Dados de Endereço
+                </Subtitle>
+                <br />
+                
+                <DoubleInput>
+                    <InputText
+                        label="CEP"
+                        name="cep"
+                        type="text"
+                        color={props.defaultColor}
+                    />
+                    <InputText
+                        label="Rua"
+                        name="adress"
+                        type="text"
+                        color={props.defaultColor}
+                    />
+                </DoubleInput>
+                
+                <DoubleInput>
+                    <InputText
+                        label="Número / Complemento"
+                        name="number"
+                        type="text"
+                        color={props.defaultColor}
+                    />
+                    <InputText
+                        label="Bairro"
+                        name="neighborhood"
+                        type="text"
+                        color={props.defaultColor}
+                    />
+                </DoubleInput>
+                
+                <DoubleInput>
+                    <InputText
+                        label="Estado"
+                        name="state"
+                        type="text"
+                        color={props.defaultColor}
+                    />
+                    <InputText
+                        label="Cidade"
+                        name="city"
+                        type="text"
+                        color={props.defaultColor}
+                    />
+                </DoubleInput>
+
+                <DoubleInput>
+                    <div></div>
+                    <BtnContainer>
+                        <Button
+                            setBackgroundColor={props.defaultColor}
+                            setBorderColor={props.defaultColor}
+                        >
+                            Salvar alterações
+                        </Button>
+                    </BtnContainer>
                 </DoubleInput>
             </SectionContainer>
         </main>
