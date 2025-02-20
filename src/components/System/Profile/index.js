@@ -148,6 +148,47 @@ const Profile = (props) => {
                     </BtnContainer>
                 </DoubleInput>
             </SectionContainer>
+
+            <SectionContainer>
+                <Subtitle
+                    $color="var(--color-white)"
+                    $align="left"
+                    $margin="0"
+                    $padding="0"
+
+                >
+                    Alterar Senha
+                </Subtitle>
+                <br />
+                
+                <DoubleInput>
+                    <InputText
+                        label="Senha atual"
+                        name="now-psw"
+                        type="password"
+                        color={props.defaultColor}
+                    />
+                    <InputText
+                        label="Nova senha"
+                        name="new-psw"
+                        type="password"
+                        color={props.defaultColor}
+                    />
+                </DoubleInput>
+                
+
+                <DoubleInput>
+                    <div></div>
+                    <BtnContainer>
+                        <Button
+                            setBackgroundColor={props.defaultColor}
+                            setBorderColor={props.defaultColor}
+                        >
+                            Alterar senha
+                        </Button>
+                    </BtnContainer>
+                </DoubleInput>
+            </SectionContainer>
         </main>
     )
 }
