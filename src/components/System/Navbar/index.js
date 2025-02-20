@@ -20,6 +20,7 @@ const TopicsSectionTitle = styled.div`
     color: var(--color-white);
     opacity: .5;
     margin-bottom: 10px;
+    font-size: 14px;
 `
 
 const TopicsList = styled.ul`
@@ -30,59 +31,74 @@ const TopicsList = styled.ul`
         display: flex;
         align-items: center;
         gap: 20px;
-        padding: 10px;
+        padding: 10px 20px 10px 10px;
         border-raius: 10px;
         margin-bottom: 20px;
+        cursor: pointer;
+        transition: .2s;
+        border-radius: 10px;
+    }
+
+    & li.active {
+        background-color: var(--color-shadow-soft);
+    }
+
+    & li.active span {
+        background-color: var(--color-sky-1);
+    }
+
+    & li:hover {
+        background-color: var(--color-shadow-soft);
     }
 
     & li span {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 40px;
+        min-width: 40px;
+        max-width: 40px;
         height: 40px;
         border-radius: 10px;
         background-color: var(--color-shadow-soft);
         color: var(--color-white);
+        padding: 5px;
+    }
+
+    & li span img {
+        width: 60%;
+        filter: invert(1);
     }
 
     & li div {
         display: block;
         color: var(--color-white);
+        font-size: 14px;
+        opacity: .8;
     }
 `
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <NavbarContainer>
             <ImgLogo src="/img/iv/first-logo.png" alt="Logo da UpFind" />
-            <TopicsSection>
-                <TopicsSectionTitle>Minha conta</TopicsSectionTitle>
-                <TopicsList>
-                    <li>
-                        <span>icon</span>
-                        <div>Dados Pessoais</div>
-                    </li>
-                    <li>
-                        <span>icon</span>
-                        <div>Meus projetos</div>
-                    </li>
-                    <li>
-                        <span>icon</span>
-                        <div>Histórico de pagamentos</div>
-                    </li>
-                </TopicsList>
-            </TopicsSection>
 
-            <TopicsSection>
-                <TopicsSectionTitle>UpFind</TopicsSectionTitle>
-                <TopicsList>
-                    <li>
-                        <span>icon</span>
-                        <div>Suporte</div>
-                    </li>
-                </TopicsList>
-            </TopicsSection>
+
+            { props.navItems.map(sec => (
+                <TopicsSection key={ sec.key }>
+                    <TopicsSectionTitle>{ sec.secNavTitle }</TopicsSectionTitle>
+                    <TopicsList>
+                        { sec.secNavItem.map((item, index) => (
+                            <li key={"item-" + index} className={`${item.text == props.active ? 'active' : ''}`}>
+                                <span>
+                                    <img src={"/img/icons/nav-system/" + item.icon + ".svg"} />
+                                </span>
+                                <div>{ item.text }</div>
+                            </li>
+                        )) }
+                    </TopicsList>
+                </TopicsSection>
+            )) }
+
         </NavbarContainer>
     )
 }
