@@ -12,10 +12,19 @@ const InputContainer = styled.div`
         width: 100%;
         margin-bottom: 10px;
         color: var(--color-white);
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
     }
 
     & label div {
         max-width: max-content;
+
+        @media (max-width: 768px) {
+            max-width: none;
+            width: 100%;
+        }
     }
 
     & input {
@@ -35,6 +44,8 @@ const BtnChooseFile = styled.div`
     background-color:var(--color-shadow-deep);
     border-radius: 10px;
     cursor: pointer;
+    text-align: center;
+
 `
 
 const InputImg = (props) => {
@@ -49,7 +60,7 @@ const InputImg = (props) => {
                 </div>
 
                 <BtnChooseFile>
-                    { props.text }
+                    {props.text}
                 </BtnChooseFile>
             </label>
             <div>

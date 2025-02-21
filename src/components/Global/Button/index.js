@@ -19,6 +19,5 @@ export const Button = styled.button.withConfig({
 
     @media (max-width: 768px) {
         width: 100%;
-        max-width: 500px;
     }
 `;

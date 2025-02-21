@@ -10,7 +10,7 @@ const NavbarContainer = styled.nav`
     }
 
     &.nav-close {
-        left: -30%;
+        left: -100%;
     }
     
     @media (max-width: 999px) {

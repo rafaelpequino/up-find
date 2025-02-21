@@ -10,6 +10,10 @@ const SubheaderContainer = styled.div`
     color: #fff;
     padding: 20px;
     border-radius: 10px;
+
+    @media (max-width: 999px) {
+        height: 100px;
+    }
 `;
 
 const UserInfo = styled.div`
@@ -31,6 +35,20 @@ const ImgUser = styled.div`
     & img {
         width: 100%;
     }
+
+    @media (max-width: 999px) {
+        max-width: 80px;
+        height: 80px;
+    }
+`
+
+const Options = styled.div`
+    width: max-content;
+    min-width: 25px;
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 `
 
 const BtnLeave = styled.button`
@@ -51,6 +69,23 @@ const BtnLeave = styled.button`
     }
 `
 
+const BtnOpenNav = styled.div`
+    width: 25px;
+    flex-direction: column;
+    gap: 4px;
+    display: none;
+
+    & div {
+        background-color: var(--color-white);
+        width: 100%;
+        height: 3px;
+    }
+
+    @media (max-width: 768px) {
+        display: flex;
+    }
+`
+
 const Subheader = () => {
     return (
         <SubheaderContainer>
@@ -60,10 +95,18 @@ const Subheader = () => {
                 </ImgUser>
                 <span>Rafael Pequino</span>
             </UserInfo>
-            <BtnLeave>
-                <img src="/img/icons/nav-system/off.svg" />
-                <span>Sair</span>
-            </BtnLeave>
+            <Options>
+                {/*
+                <BtnLeave>
+                    <span>Sair</span>
+                </BtnLeave>
+                */}
+                <BtnOpenNav>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </BtnOpenNav>
+            </Options>
         </SubheaderContainer>
     );
 };
