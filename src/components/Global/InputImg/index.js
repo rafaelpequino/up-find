@@ -3,6 +3,7 @@ import styled from "styled-components";
 const InputContainer = styled.div`
     width: 100%;
     opacity: .5;
+    font-size: 14px;
 
     & label {
         display: flex;
@@ -40,7 +41,7 @@ const InputContainer = styled.div`
 `
 
 const BtnChooseFile = styled.div`
-    padding: 20px 40px;
+    padding: 12px 40px;
     background-color:var(--color-shadow-deep);
     border-radius: 10px;
     cursor: pointer;
