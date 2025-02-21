@@ -69,7 +69,7 @@ const TopicsList = styled.ul`
         display: flex;
         align-items: center;
         gap: 15px;
-        padding: 5px 20px 5px 10px;
+        padding: 5px 20px 5px 5px;
         border-raius: 10px;
         margin-bottom: 10px;
         cursor: pointer;
