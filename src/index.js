@@ -11,6 +11,7 @@ import LoginUpFound from './pages/UpFound/login';
 import CadastroUpFinder from './pages/UpFinder/cadastro';
 import CadastroUpFound from './pages/UpFound/cadastro';
 import SystemUpFinder from './pages/UpFinder/system';
+import MeusProjetosUpFinder from './pages/UpFinder/system/meusprojetos';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
   {
     path: '/upfinder/system',
     element: <SystemUpFinder />,
+  },
+  {
+    path: '/upfinder/system/meusprojetos',
+    element: <MeusProjetosUpFinder />,
   },
 ]);
 

@@ -6,12 +6,12 @@ export const navItemsUpFinder = [
             {
                 icon: "home",
                 text: "Dados Pessoais",
-                router: ""
+                router: "/UpFinder/system"
             },
             {
                 icon: "folder",
                 text: "Meus Projetos",
-                router: ""
+                router: "/UpFinder/system/meusprojetos"
             },
             {
                 icon: "money",

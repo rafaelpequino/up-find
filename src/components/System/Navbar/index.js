@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from "styled-components";
 
 const NavbarContainer = styled.nav`
@@ -128,6 +129,8 @@ const useWindowWidth = () => {
 };
 
 const Navbar = (props) => {
+    const navigate = useNavigate();
+
     const [navStatus, setNavStatus] = useState('close');
     const width = useWindowWidth();
 
@@ -153,7 +156,11 @@ const Navbar = (props) => {
                     <TopicsSectionTitle>{sec.secNavTitle}</TopicsSectionTitle>
                     <TopicsList>
                         {sec.secNavItem.map((item, index) => (
-                            <li key={"item-" + index} className={`${item.text === props.active ? 'active' : ''}`}>
+                            <li 
+                                key={"item-" + index} 
+                                className={`${item.text === props.active ? 'active' : ''}`}
+                                onClick={() => navigate( item.router ) }    
+                            >
                                 <span>
                                     <img src={`/img/icons/nav-system/${item.icon}.svg`} />
                                 </span>
