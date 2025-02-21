@@ -1,13 +1,51 @@
+import { useState, useEffect } from 'react';
 import styled from "styled-components";
 
 const NavbarContainer = styled.nav`
     min-width: max-content;
+    transition: .3s;
+
+    &.nav-open {
+        left: 0;
+    }
+
+    &.nav-close {
+        left: -30%;
+    }
+    
+    @media (max-width: 999px) {
+        position: absolute;
+        top: 0;
+        width: max-content;
+        height: 100%;
+        background-color: var(--color-shadow-deep);
+        z-index: 10;
+        padding: 20px;
+    }
+`
+
+const ImagesContainer = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
 `
 
 const ImgLogo = styled.img`
+    display: block;
     width: 80%;
     max-width: 120px;
-    margin-bottom: 30px;
+`
+
+const ImgClose = styled.img`
+    filter: invert(1);
+    width: 20px;
+    display: none;
+
+    @media (max-width: 999px) {
+        display: block;
+    }
 `
 
 const TopicsSection = styled.div`
@@ -76,30 +114,58 @@ const TopicsList = styled.ul`
     }
 `
 
+const useWindowWidth = () => {
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => setWidth(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    return width;
+};
+
 const Navbar = (props) => {
+    const [navStatus, setNavStatus] = useState('close');
+    const width = useWindowWidth();
+
+    useEffect(() => {
+        if (width > 999) {
+            setNavStatus('open'); // Mantém a navbar aberta em telas grandes
+        }
+    }, [width]);
+
     return (
-        <NavbarContainer>
-            <ImgLogo src="/img/iv/first-logo.png" alt="Logo da UpFind" />
+        <NavbarContainer className={navStatus === 'open' ? 'nav-open' : 'nav-close'}>
+            <ImagesContainer>
+                <ImgLogo src="/img/iv/first-logo.png" alt="Logo da UpFind" />
+                <ImgClose
+                    src="/img/icons/close.svg"
+                    alt="Ícone em X para fechar navbar"
+                    onClick={() => setNavStatus('close')}
+                />
+            </ImagesContainer>
 
-
-            { props.navItems.map(sec => (
-                <TopicsSection key={ sec.key }>
-                    <TopicsSectionTitle>{ sec.secNavTitle }</TopicsSectionTitle>
+            {props.navItems.map(sec => (
+                <TopicsSection key={sec.key}>
+                    <TopicsSectionTitle>{sec.secNavTitle}</TopicsSectionTitle>
                     <TopicsList>
-                        { sec.secNavItem.map((item, index) => (
-                            <li key={"item-" + index} className={`${item.text == props.active ? 'active' : ''}`}>
+                        {sec.secNavItem.map((item, index) => (
+                            <li key={"item-" + index} className={`${item.text === props.active ? 'active' : ''}`}>
                                 <span>
-                                    <img src={"/img/icons/nav-system/" + item.icon + ".svg"} />
+                                    <img src={`/img/icons/nav-system/${item.icon}.svg`} />
                                 </span>
-                                <div>{ item.text }</div>
+                                <div>{item.text}</div>
                             </li>
-                        )) }
+                        ))}
                     </TopicsList>
                 </TopicsSection>
-            )) }
-
+            ))}
         </NavbarContainer>
-    )
-}
+    );
+};
+
 
 export default Navbar;

@@ -8,7 +8,7 @@ export const DoubleInput = styled.div`
     gap: 20px;
     margin-top: 20px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
         grid-template-columns: repeat(1, 1fr);
     }
 `

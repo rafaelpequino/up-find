@@ -8,6 +8,7 @@ const InputContainer = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 20px;
         width: 100%;
         margin-bottom: 10px;
         color: var(--color-white);
