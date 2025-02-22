@@ -6,6 +6,7 @@ import { Button } from "../../Global/Button";
 
 const ProjectsContainer = styled.div`
     width: 100%;
+    padding: 20px 0;
 `
 
 const ProjectsTitle = styled.div`
@@ -20,6 +21,10 @@ const ProjectsList = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+
+    &.finalizados {
+        opacity: .5;
+    }
 `
 
 const NewProject = styled.div`
@@ -69,11 +74,12 @@ const ProjectImg = styled.div`
 const ProjectType = styled.div`
     font-size: 12px;
     opacity: .5;
-    margin: 10px 0;
+    margin: 10px 0 5px;
 `
 
 const ProjectTitle = styled.div`
     font-size: 14px;
+    margin-bottom: -10px;
 `
 
 const MyProjects = () => {
@@ -99,6 +105,70 @@ const MyProjects = () => {
                             <div>Novo projeto</div>
                         </NewProject>
 
+                        <Project>
+
+                            <ProjectImg>
+                                <img src="/img/site.jpg" alt="Imagem capa do serviço" />
+                            </ProjectImg>
+
+                            <ProjectType>Websites</ProjectType>
+
+                            <ProjectTitle>Site para loja de roupas femininas</ProjectTitle>
+                            
+                            <Paragraph
+                                $size="12px"
+                                $color="var(--color-white)"
+                            >
+                                Preciso que seja criado do 0 um site criativo, inovador, com a essência da minha empresa...
+                            </Paragraph>
+                            
+                            <Button
+                                width="100%"
+                                setBackgroundColor="transparent"
+                                setBorderColor="var(--color-sky-1)"
+                            >
+                                Ver projeto
+                            </Button>
+                        
+                        </Project>
+                    </ProjectsList>
+                </ProjectsContainer>
+                
+                <ProjectsContainer>
+                    <ProjectsTitle>Em Andamento</ProjectsTitle>
+                    <ProjectsList>
+                        <Project>
+
+                            <ProjectImg>
+                                <img src="/img/site.jpg" alt="Imagem capa do serviço" />
+                            </ProjectImg>
+
+                            <ProjectType>Websites</ProjectType>
+
+                            <ProjectTitle>Site para loja de roupas femininas</ProjectTitle>
+                            
+                            <Paragraph
+                                $size="12px"
+                                $color="var(--color-white)"
+                            >
+                                Preciso que seja criado do 0 um site criativo, inovador, com a essência da minha empresa...
+                            </Paragraph>
+                            
+                            <Button
+                                width="100%"
+                                setBackgroundColor="transparent"
+                                setBorderColor="var(--color-sky-1)"
+                            >
+                                Ver projeto
+                            </Button>
+                        
+                        </Project>
+                    </ProjectsList>
+                </ProjectsContainer>
+                
+                <ProjectsContainer>
+                    <ProjectsTitle>Finalizados</ProjectsTitle>
+                    <ProjectsList className="finalizados">
                         <Project>
 
                             <ProjectImg>
