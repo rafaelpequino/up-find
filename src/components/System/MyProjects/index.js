@@ -7,6 +7,12 @@ import { Button } from "../../Global/Button";
 const ProjectsContainer = styled.div`
     width: 100%;
     padding: 20px 0;
+
+    
+
+    @media (max-width: 700px) {
+        padding: 20px 0 60px;
+    }
 `
 
 const ProjectsTitle = styled.div`
@@ -19,11 +25,27 @@ const ProjectsTitle = styled.div`
 const ProjectsList = styled.div`
     width:  100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 
     &.finalizados {
         opacity: .5;
+    }
+
+    @media (max-width: 1700px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 1400px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 700px) {
+        grid-template-columns: repeat(1, 1fr);
     }
 `
 
@@ -48,6 +70,14 @@ const NewProject = styled.div`
     & div:nth-child(2) {
         font-size: 14px;
     }
+
+    @media (max-width: 700px) {
+        height: 350px;
+    }
+
+    @media (max-width: 500px) {
+        height: 300px;
+    }
 `
 
 const Project = styled.div`
@@ -68,6 +98,17 @@ const ProjectImg = styled.div`
 
     & img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    @media (max-width: 700px) {
+        height: 300px;
+    }
+
+    @media (max-width: 700px) {
+        height: 200px;
     }
 `
 
