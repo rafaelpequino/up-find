@@ -135,7 +135,7 @@ const ProjectsContainer = (props) => {
                 {props.projectsList.map(proj => (
                     <Project>
                         <ProjectImg>
-                            <img src="/img/site.jpg" alt="Imagem capa do serviço" />
+                            <img src={proj.imgName} alt="Imagem capa do serviço" />
                         </ProjectImg>
 
                         <ProjectType>{proj.type}</ProjectType>

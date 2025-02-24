@@ -4,11 +4,13 @@ import ProjectsContainer from "../ProjectsContainer";
 
 const projectsList = [
     {
+        imgName: '/img/node_code.jpg',
         type: 'Website',
         title: 'Site para loja de roupas femininas',
         desc: 'Preciso que seja criado do 0 um site criativo, inovador, com a essência da minha empresa...'
     },
     {
+        imgName: '/img/code.jpg',
         type: 'Website',
         title: 'Site para loja de roupas femininas',
         desc: 'Preciso que seja criado do 0 um site criativo, inovador, com a essência da minha empresa...'
