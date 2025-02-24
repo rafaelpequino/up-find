@@ -42,7 +42,7 @@ const MyProjects = () => {
                 />
 
                 <ProjectsContainer
-                    title="Fianlizados"
+                    title="Finalizados"
                     projectsList={projectsList}
                 />
 

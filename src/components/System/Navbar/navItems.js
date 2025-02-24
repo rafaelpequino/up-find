@@ -16,7 +16,7 @@ export const navItemsUpFinder = [
             {
                 icon: "money",
                 text: "Histórico de Pagamentos",
-                router: ""
+                router: "/UpFinder/system/pagamentos"
             }
         ]
     },
