@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { Paragraph } from "../../Global/Paragraph";
 import { Button } from "../../Global/Button";
 
-const ProjectsContainerSec = styled.div`
+const ProjectContainerSec = styled.div`
     width: 100%;
     padding: 20px 0;
 
@@ -81,6 +81,10 @@ const Project = styled.div`
     height: 100%;
     overflow: hidden;
     color: var(--color-white);
+    cursor: pointer;
+    background-color: var(--color-shadow-deep);
+    padding: 10px;
+    border-radius: 10px;
 `
 
 const ProjectImg = styled.div`
@@ -119,9 +123,9 @@ const ProjectTitle = styled.div`
     margin-bottom: -10px;
 `
 
-const ProjectsContainer = (props) => {
+const ProjectContainer = (props) => {
     return (
-        <ProjectsContainerSec>
+        <ProjectContainerSec>
             <ProjectsTitle>{props.title}</ProjectsTitle>
             <ProjectsList>
 
@@ -149,6 +153,7 @@ const ProjectsContainer = (props) => {
                             {proj.desc}
                         </Paragraph>
 
+                        {/*
                         <Button
                             width="100%"
                             setBackgroundColor="transparent"
@@ -156,11 +161,12 @@ const ProjectsContainer = (props) => {
                         >
                             Ver projeto
                         </Button>
+                        */}
                     </Project>
                 ))}
             </ProjectsList>
-        </ProjectsContainerSec>
+        </ProjectContainerSec>
     )
 }
 
-export default ProjectsContainer;
+export default ProjectContainer;

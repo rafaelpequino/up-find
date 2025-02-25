@@ -1,6 +1,6 @@
 import { Subtitle } from "../../Global/Subtitle";
 import { SectionContainer } from "../SectionContainer";
-import ProjectsContainer from "../ProjectsContainer";
+import ProjectContainer from "../ProjectContainer";
 
 const projectsList = [
     {
@@ -32,18 +32,18 @@ const MyProjects = () => {
                 </Subtitle>
                 <br />
 
-                <ProjectsContainer
+                <ProjectContainer
                     needsNewBtn="true"
                     title="Abertos"
                     projectsList={projectsList}
                 />
 
-                <ProjectsContainer
+                <ProjectContainer
                     title="Em andamento"
                     projectsList={projectsList}
                 />
 
-                <ProjectsContainer
+                <ProjectContainer
                     title="Finalizados"
                     projectsList={projectsList}
                 />
