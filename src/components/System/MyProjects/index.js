@@ -1,6 +1,7 @@
 import { Subtitle } from "../../Global/Subtitle";
 import { SectionContainer } from "../SectionContainer";
 import ProjectContainer from "../ProjectContainer";
+import { useNavigate } from "react-router-dom";
 
 const projectsList = [
     {

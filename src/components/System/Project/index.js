@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Paragraph } from "../../Global/Paragraph";
 import { SectionContainer } from "../SectionContainer";
 import InfoProjectContainer from "../InfoProjectContainer";
+import { useNavigate } from "react-router-dom";
 
 const BtnBack = styled.div`
     display: flex;
@@ -142,10 +143,12 @@ const projectData = [
 
 
 const Project = () => {
+    const navigate = useNavigate();
+
     return (
         <main>
             <SectionContainer>
-                <BtnBack>
+                <BtnBack onClick={() => navigate('/upfinder/system/meusprojetos')}>
                     <img src="/img/icons/back.svg" alt="Ícone de voltar" />
                     Voltar
                 </BtnBack>

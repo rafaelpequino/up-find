@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { Paragraph } from "../../Global/Paragraph";
 import { Button } from "../../Global/Button";
+import { useNavigate } from "react-router-dom";
 
 const ProjectContainerSec = styled.div`
     width: 100%;
@@ -124,6 +125,9 @@ const ProjectTitle = styled.div`
 `
 
 const ProjectContainer = (props) => {
+    
+    const navigate = useNavigate();
+    
     return (
         <ProjectContainerSec>
             <ProjectsTitle>{props.title}</ProjectsTitle>
@@ -137,7 +141,7 @@ const ProjectContainer = (props) => {
                 )}
 
                 {props.projectsList.map(proj => (
-                    <Project>
+                    <Project onClick={() => navigate('/upfinder/system/projeto')}>
                         <ProjectImg>
                             <img src={proj.imgName} alt="Imagem capa do serviço" />
                         </ProjectImg>
