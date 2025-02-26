@@ -1,10 +1,10 @@
 import Navbar from "../../../components/System/Navbar";
-import { navItemsUpFinder } from "../../../components/System/Navbar/navItems";
+import { navItemsUpFound } from "../../../components/System/Navbar/navItems";
 import Subheader from "../../../components/System/Subheader";
 import Profile from "../../../components/System/Profile";
 import { InsideSystemContainer, SystemContainer } from "../../../components/System/SystemContainer";
 
-const navItems = navItemsUpFinder;
+const navItems = navItemsUpFound;
 
 const System = () => {
     return (
@@ -13,16 +13,16 @@ const System = () => {
                 <Navbar 
                     navItems={navItems} 
                     active="Dados Pessoais"
-                    imgLogo="first-logo"
-                    defaultColor="var(--color-sky-1)"
+                    imgLogo="first-logo-for-devs"
+                    defaultColor="var(--color-sky-2)"
                 />
                 
                 <div>
                     <Subheader
-                        defaultColor="var(--color-sky-1)"
+                        defaultColor="var(--color-sky-2)"
                     />
                     <Profile
-                        defaultColor="var(--color-sky-1)"
+                        defaultColor="var(--color-sky-2)"
                     />
                 </div>
             </InsideSystemContainer>

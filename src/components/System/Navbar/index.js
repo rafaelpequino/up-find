@@ -82,7 +82,7 @@ const TopicsList = styled.ul`
     }
 
     & li.active span {
-        background-color: var(--color-sky-1);
+        background-color: ${props => props.$defaultColor || "red"};
     }
 
     & li:hover {
@@ -143,7 +143,7 @@ const Navbar = (props) => {
     return (
         <NavbarContainer className={navStatus === 'open' ? 'nav-open' : 'nav-close'}>
             <ImagesContainer>
-                <ImgLogo src="/img/iv/first-logo.png" alt="Logo da UpFind" />
+                <ImgLogo src={`/img/iv/${props.imgLogo}.png`} alt="Logo da UpFind" />
                 <ImgClose
                     src="/img/icons/close.svg"
                     alt="Ícone em X para fechar navbar"
@@ -154,7 +154,7 @@ const Navbar = (props) => {
             {props.navItems.map(sec => (
                 <TopicsSection key={sec.key}>
                     <TopicsSectionTitle>{sec.secNavTitle}</TopicsSectionTitle>
-                    <TopicsList>
+                    <TopicsList $defaultColor={props.defaultColor}>
                         {sec.secNavItem.map((item, index) => (
                             <li 
                                 key={"item-" + index} 

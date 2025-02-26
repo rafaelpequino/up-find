@@ -6,7 +6,6 @@ const SubheaderContainer = styled.div`
     justify-content: space-between;
     min-width: 100%;
     height: 120px;
-    background-color: var(--color-sky-1);
     color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -86,9 +85,11 @@ const BtnOpenNav = styled.div`
     }
 `
 
-const Subheader = () => {
+const Subheader = (props) => {
     return (
-        <SubheaderContainer>
+        <SubheaderContainer
+            style={{backgroundColor: props.defaultColor}}
+        >
             <UserInfo>
                 <ImgUser>
                     <img src="/img/user.jpg" alt="Foto do usuário" />
