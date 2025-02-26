@@ -10,13 +10,16 @@ const Projeto = () => {
     return (
         <SystemContainer>
             <InsideSystemContainer>
-                <Navbar
+                <Navbar 
                     navItems={navItems} 
-                    active="Meus Projetos"
+                    imgLogo="first-logo"
+                    defaultColor="var(--color-sky-1)"
                 />
                 
                 <div>
-                    <Subheader />
+                    <Subheader
+                        defaultColor="var(--color-sky-1)"
+                    />
                     <Project />
                 </div>
             </InsideSystemContainer>

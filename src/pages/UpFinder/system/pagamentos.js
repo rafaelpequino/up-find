@@ -13,10 +13,14 @@ const System = () => {
                 <Navbar 
                     navItems={navItems} 
                     active="Histórico de Pagamentos"
+                    imgLogo="first-logo"
+                    defaultColor="var(--color-sky-1)"
                 />
                 
                 <div>
-                    <Subheader />
+                    <Subheader
+                        defaultColor="var(--color-sky-1)"
+                    />
                     <PaymentsHistoric />
                 </div>
             </InsideSystemContainer>
