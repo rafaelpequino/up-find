@@ -21,6 +21,7 @@ import ProjetoUpFinder from './pages/UpFinder/system/projeto';
 
 //System UpFound
 import SystemUpFound from './pages/UpFound/system';
+import DadosProfissionaisUpFound from './pages/UpFound/system/dadosprofissionais';
 
 const router = createBrowserRouter([
   {
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
   {
     path: '/upfound/system',
     element: <SystemUpFound />
+  },
+  {
+    path: '/upfound/system/dadosprofissionais',
+    element: <DadosProfissionaisUpFound />
   }
 ]);
 
