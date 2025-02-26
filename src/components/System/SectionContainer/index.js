@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SectionContainer = styled.section`
     width: 100%;
-    height: max-contet;
+    height: max-content;
     background-color: var(--color-shadow-soft);
     margin: 20px 0;
     padding: 40px;
