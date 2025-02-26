@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Paragraph } from "../../Global/Paragraph";
 import { SectionContainer } from "../SectionContainer";
+import InfoProjectContainer from "../InfoProjectContainer";
 
 const BtnBack = styled.div`
     display: flex;
@@ -92,10 +93,53 @@ const ProposalOptions = styled.div`
         cursor: pointer;
     }
 `
+const projectData = [
+    {
+        title: 'Tipo do projeto',
+        text: 'Website'
+    },
+    {
+        title: 'Título',
+        text: 'Site para loja de roupas femininas'
+    },
+    {
+        title: 'Descrição',
+        text: 'Preciso que seja criado do 0 um site criativo, inovador, com a essência da minha empresa um espaço digital que represente nossa identidade, conectando desenvolvedores e clientes de forma intuitiva, moderna e eficiente. O site deve refletir os valores da FindCoders, transmitindo confiança, dinamismo e tecnologia de ponta. Cada detalhe da interface será pensado para proporcionar uma experiência fluida e envolvente, combinando um design atraente com funcionalidades que realmente fazem a diferença.'
+    },
+    {
+        title: 'Objetivo',
+        text: 'O objetivo é atrair mais clientes para a loja física, e aumentar o número de vendas online.'
+    },
+    {
+        title: 'Público-alvo',
+        text: 'Mulheres'
+    },
+    {
+        title: 'Principais funcionalidades',
+        text: 'Não definido'
+    },
+    {
+        title: 'Preferência por tecnologias',
+        text: 'Não'
+    },
+    {
+        title: 'Possui algo desenvolvido?',
+        text: 'Não'
+    },
+    {
+        title: 'Referências',
+        text: 'https://www.oneup.com.br/?gad_source=1&gclid=CjwKCAiA2y8bBhBoEiwAbM904KTF8NVzpifZSFNORSRlA9HNuzwrYSOgm4uUJIJ4xE0Jw_cw6dh0cJTUQAvD_BwE'
+    },
+    {
+        title: 'Orçamento',
+        text: 'Não definido'
+    },
+    {
+        title: 'Informações adicionais',
+        text: 'Não definido'
+    }
+];
 
-const Info = styled.div`
-    font-size: 14px;
-`
 
 const Project = () => {
     return (
@@ -120,7 +164,7 @@ const Project = () => {
                         Profissionais interessados
                     </Paragraph>
 
-                    <Professional style={{border: '2px solid var(--color-sky-1)'}}>
+                    <Professional style={{ border: '2px solid var(--color-sky-1)' }}>
                         <ProfessionalImg>
                             <div>
                                 <img src="/img/user.jpg" alt="Foto do profissional" />
@@ -137,7 +181,7 @@ const Project = () => {
                         </ProposalOptions>
                     </Professional>
 
-                    <Professional style={{border: '2px solid var(--color-sky-1)'}}>
+                    <Professional style={{ border: '2px solid var(--color-sky-1)' }}>
                         <ProfessionalImg>
                             <div>
                                 <img src="/img/user.jpg" alt="Foto do profissional" />
@@ -153,7 +197,7 @@ const Project = () => {
                             <div>Negociar</div>
                         </ProposalOptions>
                     </Professional>
-                    
+
                     <Professional>
                         <ProfessionalImg>
                             <div>
@@ -164,23 +208,14 @@ const Project = () => {
                     </Professional>
                 </ProfessionalInfo>
 
-                <Info>
-                    <Paragraph
-                        $color="var(--color-white)"
-                        $size="14px"
-                        $opacity=".7"
-                        $margin="30px 0 5px 0"
+                {projectData.map(project => (
+                    <InfoProjectContainer
+                        title={project.title}
                     >
-                        Tipo do projeto
-                    </Paragraph>
-                    <Paragraph
-                        $color="var(--color-white)"
-                        $size="14px"
-                        $margin="0"
-                    >
-                        Website
-                    </Paragraph>
-                </Info>
+                        {project.text}
+                    </InfoProjectContainer>
+                ))}
+
             </SectionContainer>
         </main>
     )
