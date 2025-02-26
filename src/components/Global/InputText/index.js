@@ -30,7 +30,7 @@ const InputContainer = styled.div`
 
 const InputText = (props) => {
     return (
-        <InputContainer>
+        <InputContainer style={{margin: props.margin || '0'}}>
             <label htmlFor={ 'input-' + props.name }>{ props.label }</label>
             <input 
                 type={ props.type } 
