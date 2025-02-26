@@ -13,6 +13,7 @@ import CadastroUpFound from './pages/UpFound/cadastro';
 import SystemUpFinder from './pages/UpFinder/system';
 import MeusProjetosUpFinder from './pages/UpFinder/system/meusprojetos';
 import PagamentosUpFinder from './pages/UpFinder/system/pagamentos';
+import ProjetoUpFinder from './pages/UpFinder/system/projeto';
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
   {
     path: '/upfinder/system/pagamentos',
     element: <PagamentosUpFinder />
+  },
+  {
+    path: '/upfinder/system/projeto',
+    element: <ProjetoUpFinder />
   }
 ]);
 
