@@ -14,6 +14,30 @@ const BtnContainer = styled.div`
     justify-content: flex-end;
 `
 
+const specialties = [
+    "Web Frontend",
+    "Web Backend",
+    "Full Stack",
+    "Mobile Apps",
+    "E-commerce",
+    "APIs e Integrações",
+    "Landing Pages",
+    "WordPress e CMS",
+    "UX/UI Design",
+    "Automação e Bots",
+    "Inteligência Artificial",
+    "Machine Learning",
+    "Chatbots",
+    "SEO e Performance",
+    "Segurança Web",
+    "Games",
+    "Scraping e Coleta de Dados",
+    "Cloud e Hospedagem",
+    "Banco de Dados",
+    "Marketing Digital e Growth"
+  ];
+  
+
 const ProfessionalData = (props) => {
     return (
         <main>
@@ -36,6 +60,7 @@ const ProfessionalData = (props) => {
                     required="true"
                     color={props.defaultColor}
                     margin="0 0 30px"
+                    options={specialties}
                 />
 
                 <InputText
