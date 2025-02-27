@@ -3,9 +3,9 @@ import { Subtitle } from '../../Global/Subtitle'
 import { DoubleInput } from '../../Global/DoubleInput';
 import { Button } from '../../Global/Button';
 import InputText from '../../Global/InputText';
-import InputImg from '../../Global/InputImg';
 import { SectionContainer } from '../SectionContainer';
 import Select from '../../Global/Select';
+import TextArea from '../../Global/TextArea';
 
 const BtnContainer = styled.div`
     width: 100%;
@@ -35,8 +35,8 @@ const specialties = [
     "Cloud e Hospedagem",
     "Banco de Dados",
     "Marketing Digital e Growth"
-  ];
-  
+];
+
 
 const ProfessionalData = (props) => {
     return (
@@ -54,21 +54,57 @@ const ProfessionalData = (props) => {
                 <br />
 
 
-                <Select 
-                    label="Especialidade"
-                    name="especialidade"
-                    required="true"
-                    color={props.defaultColor}
-                    margin="0 0 30px"
-                    options={specialties}
-                />
+                <DoubleInput>
+                    <Select
+                        label="Especialidade"
+                        name="especialidade"
+                        required="true"
+                        color={props.defaultColor}
+                        options={specialties}
+                    />
+                    <InputText
+                        label="Portfólio"
+                        name="fullname"
+                        type="text"
+                        required="false"
+                        color={props.defaultColor}
+                    />
+                </DoubleInput>
+
+
+                <DoubleInput>
+                    <InputText
+                        label="LinkedIn"
+                        name="linkedin"
+                        type="text"
+                        required="false"
+                        color={props.defaultColor}
+                    />
+                    <InputText
+                        label="GitHub"
+                        name="github"
+                        type="text"
+                        required="false"
+                        color={props.defaultColor}
+                    />
+                </DoubleInput>
 
                 <InputText
-                    label="Nome completo"
+                    label="Quais tecnologias você domina?"
                     name="fullname"
                     type="text"
                     color={props.defaultColor}
-                    margin="0 0 20px"
+                    margin="20px 0"
+                    placeholder="Ex.: JavaScript, TypeScript, React, Vue, .NET, Ruby, SQL Server, Python..."
+                />
+
+                <TextArea
+                    label="Biografia"
+                    name="fullname"
+                    type="text"
+                    color={props.defaultColor}
+                    margin="20px 0"
+                    placeholder="Nos conte mais sobre você, sua carreira, seu projetos..."
                 />
 
                 <DoubleInput>
