@@ -20,7 +20,7 @@ const MeusProjetos = () => {
                 <div>
                     <Subheader
                         defaultColor="var(--color-sky-1)"
-                        surname="Dev"
+                        surname="UpFinder"
                     />
                     <MyProjects />
                 </div>

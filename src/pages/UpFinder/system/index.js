@@ -20,6 +20,7 @@ const System = () => {
                 <div>
                     <Subheader
                         defaultColor="var(--color-sky-1)"
+                        surname="UpFinder"
                     />
                     <Profile
                         defaultColor="var(--color-sky-1)"
