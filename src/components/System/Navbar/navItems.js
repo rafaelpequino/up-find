@@ -28,7 +28,12 @@ export const navItemsUpFinder = [
                 icon: "phone",
                 text: "Suporte",
                 router: ""
-            }
+            },
+            {
+                icon: "off",
+                text: "Sair",
+                router: ""
+            },
         ]
     }
 
@@ -55,6 +60,11 @@ export const navItemsUpFound = [
                 router: "/UpFound/system/meusprojetos"
             },
             {
+                icon: "search",
+                text: "Buscar Projetos",
+                router: ""
+            },
+            {
                 icon: "money",
                 text: "Financeiro",
                 router: "/UpFound/system/financeiro"
@@ -66,15 +76,15 @@ export const navItemsUpFound = [
         secNavTitle: "UpFind",
         secNavItem: [
             {
-                icon: "search",
-                text: "Buscar Projetos",
-                router: ""
-            },
-            {
                 icon: "phone",
                 text: "Suporte",
                 router: ""
-            }
+            },
+            {
+                icon: "off",
+                text: "Sair",
+                router: ""
+            },
         ]
     }
 

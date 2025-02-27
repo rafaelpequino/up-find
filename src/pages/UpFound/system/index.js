@@ -20,6 +20,7 @@ const System = () => {
                 <div>
                     <Subheader
                         defaultColor="var(--color-sky-2)"
+                        surname="Dev"
                     />
                     <Profile
                         defaultColor="var(--color-sky-2)"

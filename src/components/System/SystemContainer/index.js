@@ -15,9 +15,13 @@ export const InsideSystemContainer = styled.div`
     margin: auto;
     display: flex;
     gap: 40px;
-    padding: 20px;
+    padding: 20px 20px 20px 300px;
 
     & div {
         width: 100%;
+    }
+
+    @media (max-width: 1200px) {
+        padding: 20px;
     }
 `

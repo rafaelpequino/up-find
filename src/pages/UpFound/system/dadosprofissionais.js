@@ -20,6 +20,7 @@ const DadosProfissionais = () => {
                 <div>
                     <Subheader
                         defaultColor="var(--color-sky-2)"
+                        surname="Dev"
                     />
                     <ProfessionalData
                         defaultColor="var(--color-sky-2)"

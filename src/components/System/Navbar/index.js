@@ -3,8 +3,15 @@ import { useNavigate } from 'react-router-dom';
 import styled from "styled-components";
 
 const NavbarContainer = styled.nav`
+    width: 300px;
     min-width: max-content;
-    transition: .3s;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: var(--color-shadow-deep);
+    z-index: 10;
 
     &.nav-open {
         left: 0;
@@ -15,13 +22,9 @@ const NavbarContainer = styled.nav`
     }
     
     @media (max-width: 1200px) {
-        position: absolute;
         top: 0;
         width: max-content;
-        height: 100%;
-        background-color: var(--color-shadow-deep);
-        z-index: 10;
-        padding: 20px;
+        transition: .3s;
     }
 `
 
@@ -127,7 +130,6 @@ const useWindowWidth = () => {
 
     return width;
 };
-
 const Navbar = (props) => {
     const navigate = useNavigate();
 
