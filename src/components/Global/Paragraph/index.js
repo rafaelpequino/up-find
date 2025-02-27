@@ -10,6 +10,8 @@ export const Paragraph = styled.p`
     max-width: 850px;
     margin: ${props => props.$margin || '20px 0'};
     opacity: ${props => props.$opacity || '1'};
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 
     & button {
         background-color: transparent;

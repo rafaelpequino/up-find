@@ -14,7 +14,7 @@ const NavbarContainer = styled.nav`
         left: -100%;
     }
     
-    @media (max-width: 999px) {
+    @media (max-width: 1200px) {
         position: absolute;
         top: 0;
         width: max-content;
@@ -44,7 +44,7 @@ const ImgClose = styled.img`
     width: 20px;
     display: none;
 
-    @media (max-width: 999px) {
+    @media (max-width: 1200px) {
         display: block;
     }
 `
