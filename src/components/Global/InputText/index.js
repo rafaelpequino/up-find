@@ -41,6 +41,7 @@ const InputText = (props) => {
                 id={ 'input-' + props.name } 
                 required={ props.required || true }
                 style={{outlineColor: props.color}}    
+                placeholder={ props.placeholder }
             />
         </InputContainer>
     )
