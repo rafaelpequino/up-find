@@ -17,8 +17,9 @@ const BtnContainer = styled.div`
 const SectionsInput = styled.div`
     width: 100%;
     display: grid;
-    grid-template-columns: 35% 35% 15% 15%;
+    grid-template-columns: calc(35% - 10px) calc(35% - 10px) calc(15% - 5px) calc(15% - 5px);
     gap: 10px;
+
 `
 
 const BtnNewSecInput = styled.div`
