@@ -10,7 +10,7 @@ export const Title = styled.h2`
     max-width: 850px;
     font-weight: 700;
 
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         font-size: 45px;
         text-align: left;
     }

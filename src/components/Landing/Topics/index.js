@@ -18,7 +18,7 @@ const ListTopics = styled.div`
     justify-content: space-between;
     gap: 64px 32px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         align-items: center;

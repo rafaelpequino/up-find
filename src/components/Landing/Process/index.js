@@ -24,7 +24,7 @@ const CenterLine = styled.div`
     height: 75%;
     background-color: var(--color-white);
 
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         left: 25px;
     }
 `

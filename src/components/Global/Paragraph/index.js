@@ -21,7 +21,7 @@ export const Paragraph = styled.p`
         color: ${props => props.$linkColor || props.$color || 'var(--color-black)'};
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         font-size: 16px;
 
         & button {

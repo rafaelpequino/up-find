@@ -26,7 +26,7 @@ const BoxCadastro = styled.div`
     border-radius: 25px;
     background-color: var(--color-shadow-soft);
 
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         padding: 40px 20px;
         border-radius: 15px;
     }

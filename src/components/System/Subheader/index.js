@@ -10,7 +10,7 @@ const SubheaderContainer = styled.div`
     padding: 20px;
     border-radius: 10px;
 
-    @media (max-width: 999px) {
+    @media (max-width: 1200px) {
         height: 100px;
     }
 `;
@@ -35,7 +35,7 @@ const ImgUser = styled.div`
         width: 100%;
     }
 
-    @media (max-width: 999px) {
+    @media (max-width: 1200px) {
         max-width: 80px;
         height: 80px;
     }
@@ -80,7 +80,7 @@ const BtnOpenNav = styled.div`
         height: 3px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         display: flex;
     }
 `

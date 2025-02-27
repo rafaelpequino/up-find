@@ -9,7 +9,7 @@ export const SectionContainer = styled.section`
     padding: 40px;
     border-radius: 10px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         padding: 20px;
     }
 `

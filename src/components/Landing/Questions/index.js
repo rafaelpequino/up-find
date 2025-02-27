@@ -15,7 +15,7 @@ const ListQuestions = styled.div`
     margin: auto;
     padding: 32px 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         grid-template-columns: repeat(1, 1fr);
     }
 `

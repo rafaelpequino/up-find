@@ -11,7 +11,7 @@ const StepProcessContainer = styled.div`
     padding: 32px 0;
     margin: auto;
 
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         grid-template-columns: 50px auto;
     }
 `;
@@ -19,7 +19,7 @@ const StepProcessContainer = styled.div`
 const AssistantDiv = styled.div`
     display: block;
 
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         display: none;
     }
 `;
@@ -33,7 +33,7 @@ const CircleStep = styled.div`
     background-color: var(--color-black);
     z-index: 10;
 
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         display: block;
     }
 `;

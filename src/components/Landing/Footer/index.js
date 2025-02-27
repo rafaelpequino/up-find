@@ -17,7 +17,7 @@ const DivInsideFooter = styled.div`
     flex-wrap: wrap;
     gap: 64px 32px;
 
-    @media (max-width: 999px) {
+    @media (max-width: 1200px) {
         flex-direction: column;
     }
 `

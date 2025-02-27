@@ -15,7 +15,7 @@ const ChooseContainer = styled.section`
         padding: 20px;
     }
     
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         grid-template-columns: repeat(1, 1fr);
     }
 `;

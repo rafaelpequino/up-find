@@ -14,7 +14,7 @@ const InputContainer = styled.div`
         margin-bottom: 10px;
         color: var(--color-white);
 
-        @media (max-width: 768px) {
+        @media (max-width: 999px) {
             flex-direction: column;
         }
     }
@@ -22,7 +22,7 @@ const InputContainer = styled.div`
     & label div {
         max-width: max-content;
 
-        @media (max-width: 768px) {
+        @media (max-width: 999px) {
             max-width: none;
             width: 100%;
         }

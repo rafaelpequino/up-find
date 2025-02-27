@@ -24,7 +24,7 @@ const PlansComparison = styled.div`
     align-items: center;
     padding: 50px 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         flex-direction: column;
         gap: 20px;
     }
@@ -41,7 +41,7 @@ const Loose = styled.div`
     align-items: center;
     justify-content: center;
 
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         border-radius: 15px;
     }
 `

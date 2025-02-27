@@ -51,7 +51,7 @@ const DivButtons = styled.div`
     gap: 16px 32px;
     margin-top: 35px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         width: 100%;
         max-width: 500px;
     }

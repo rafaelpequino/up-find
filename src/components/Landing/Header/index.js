@@ -48,7 +48,7 @@ const LinkLogin = styled.button`
     display: block;
     cursor: pointer;
 
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         display: none;
     }
 `;
@@ -66,7 +66,7 @@ const LinkCadastro = styled.button`
     display: block;
     cursor: pointer;
 
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         display: none;
     }
 `;
@@ -77,7 +77,7 @@ const DivInsideMobile = styled.button`
     display: none;
     cursor: pointer;
 
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         display: block;
     }
 `
