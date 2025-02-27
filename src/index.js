@@ -22,6 +22,9 @@ import ProjetoUpFinder from './pages/UpFinder/system/projeto';
 //System UpFound
 import SystemUpFound from './pages/UpFound/system';
 import DadosProfissionaisUpFound from './pages/UpFound/system/dadosprofissionais';
+import MeusProjetosUpFound from './pages/UpFound/system/meusprojetos';
+import BuscarProjetosUpFound from './pages/UpFound/system/buscarprojetos';
+import FinanceiroUpFound from './pages/UpFound/system/financeiro';
 
 const router = createBrowserRouter([
   {
@@ -75,6 +78,18 @@ const router = createBrowserRouter([
   {
     path: '/upfound/system/dadosprofissionais',
     element: <DadosProfissionaisUpFound />
+  },
+  {
+    path: '/upfound/system/meusprojetos',
+    element: <MeusProjetosUpFound />
+  },
+  {
+    path: '/upfound/system/buscarprojetos',
+    element: <BuscarProjetosUpFound />
+  },
+  {
+    path: '/upfound/system/financeiro',
+    element: <FinanceiroUpFound />
   }
 ]);
 

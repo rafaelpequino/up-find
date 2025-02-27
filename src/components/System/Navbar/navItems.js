@@ -62,7 +62,7 @@ export const navItemsUpFound = [
             {
                 icon: "search",
                 text: "Buscar Projetos",
-                router: ""
+                router: "/UpFound/system/buscarprojetos"
             },
             {
                 icon: "money",
