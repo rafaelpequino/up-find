@@ -83,7 +83,7 @@ const Project = styled.div`
     overflow: hidden;
     color: var(--color-white);
     cursor: pointer;
-    background-color: var(--color-shadow-deep);
+    background-color: rgb(36, 36, 36);
     padding: 10px;
     border-radius: 10px;
 `
