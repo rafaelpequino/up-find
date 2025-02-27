@@ -45,7 +45,10 @@ const SelectContainer = styled.div`
 const Select = (props) => {
     return (
         <SelectContainer style={{ margin: props.margin || '0' }}>
-            <label htmlFor={'select-' + props.name}>{props.label}</label>
+            <label htmlFor={'select-' + props.name}>
+                {props.label}
+                { props.required == 'false' ? '' : ' *' }
+            </label>
             <select
                 name={props.name}
                 id={'select-' + props.name}
