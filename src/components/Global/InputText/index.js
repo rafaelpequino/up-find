@@ -30,18 +30,20 @@ const InputContainer = styled.div`
 
 const InputText = (props) => {
     return (
-        <InputContainer style={{margin: props.margin || '0'}}>
-            <label htmlFor={ 'input-' + props.name }>
-                { props.label }
-                { props.required == 'false' ? '' : ' *' }
-            </label>
-            <input 
-                type={ props.type } 
-                name={ props.name } 
-                id={ 'input-' + props.name } 
-                required={ props.required || true }
-                style={{outlineColor: props.color}}    
-                placeholder={ props.placeholder }
+        <InputContainer style={{ margin: props.margin || '0' }}>
+            {props.label && (
+                <label htmlFor={'input-' + props.name}>
+                    {props.label}
+                    {props.required == 'false' ? '' : ' *'}
+                </label>
+            )}
+            <input
+                type={props.type}
+                name={props.name}
+                id={'input-' + props.name}
+                required={props.required || true}
+                style={{ outlineColor: props.color }}
+                placeholder={props.placeholder}
             />
         </InputContainer>
     )
