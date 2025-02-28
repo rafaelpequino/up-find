@@ -83,8 +83,7 @@ const Project = styled.div`
     overflow: hidden;
     color: var(--color-white);
     cursor: pointer;
-    background-color: rgb(36, 36, 36);
-    padding: 10px;
+    padding: 0;
     border-radius: 10px;
 `
 
@@ -157,7 +156,7 @@ const ProjectContainer = (props) => {
                             {proj.desc}
                         </Paragraph>
 
-                        {/*
+                        
                         <Button
                             width="100%"
                             setBackgroundColor="transparent"
@@ -165,7 +164,7 @@ const ProjectContainer = (props) => {
                         >
                             Ver projeto
                         </Button>
-                        */}
+                        
                     </Project>
                 ))}
             </ProjectsList>
