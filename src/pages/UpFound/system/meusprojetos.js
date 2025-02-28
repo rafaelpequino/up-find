@@ -1,3 +1,4 @@
+import MyProjectsUpFound from "../../../components/System/MyProjectsUpFound";
 import Navbar from "../../../components/System/Navbar";
 import { navItemsUpFound } from "../../../components/System/Navbar/navItems";
 import Subheader from "../../../components/System/Subheader";
@@ -20,6 +21,9 @@ const System = () => {
                     <Subheader
                         defaultColor="var(--color-sky-2)"
                         surname="Dev"
+                    />
+                    <MyProjectsUpFound
+                        defaultColor="var(--color-sky-2)"
                     />
                 </div>
             </InsideSystemContainer>

@@ -160,7 +160,7 @@ const ProjectContainer = (props) => {
                         <Button
                             width="100%"
                             setBackgroundColor="transparent"
-                            setBorderColor="var(--color-sky-1)"
+                            setBorderColor={props.defaultColor}
                         >
                             Ver projeto
                         </Button>

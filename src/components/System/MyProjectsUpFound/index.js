@@ -18,7 +18,7 @@ const projectsList = [
     }
 ]
 
-const MyProjects = () => {
+const MyProjectsUpFound = (props) => {
     return (
         <main>
             <SectionContainer>
@@ -34,19 +34,21 @@ const MyProjects = () => {
                 <br />
 
                 <ProjectContainer
-                    needsNewBtn="true"
                     title="Abertos"
                     projectsList={projectsList}
+                    defaultColor={props.defaultColor}
                 />
 
                 <ProjectContainer
                     title="Em andamento"
                     projectsList={projectsList}
+                    defaultColor={props.defaultColor}
                 />
 
                 <ProjectContainer
                     title="Finalizados"
                     projectsList={projectsList}
+                    defaultColor={props.defaultColor}
                 />
 
             </SectionContainer>
@@ -54,4 +56,4 @@ const MyProjects = () => {
     )
 }
 
-export default MyProjects;
+export default MyProjectsUpFound;
