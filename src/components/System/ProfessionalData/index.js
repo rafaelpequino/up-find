@@ -14,22 +14,6 @@ const BtnContainer = styled.div`
     justify-content: flex-end;
 `
 
-const SectionsInput = styled.div`
-    width: 100%;
-    display: grid;
-    grid-template-columns: calc(35% - 10px) calc(35% - 10px) calc(15% - 5px) calc(15% - 5px);
-    gap: 10px;
-
-`
-
-const BtnNewSecInput = styled.div`
-    font-size: 14px;
-    color: var(--color-white);
-    opacity: .7;
-    cursor: pointer;
-    margin-bottom: 20px;
-`
-
 const specialties = [
     "Web Frontend",
     "Web Backend",
@@ -122,90 +106,6 @@ const ProfessionalData = (props) => {
                     margin="20px 0"
                     placeholder="Nos conte mais sobre você, sua carreira, seu projetos..."
                 />
-
-                <div>
-                    <SectionsInput>
-                        <InputText
-                            label="Curso"
-                            name="curso"
-                            type="text"
-                            color={props.defaultColor}
-                            margin="10px 0"
-                            required="false"
-                            placeholder="Ex.: Tecnólogo em Análise e Desenvolvimento de Sistemas"
-                        />
-                        <InputText
-                            label="Instituição"
-                            name="instituicao"
-                            type="text"
-                            color={props.defaultColor}
-                            margin="10px 0"
-                            required="false"
-                            placeholder="Ex.: Centro Universitário Senac"
-                        />
-                        <InputText
-                            label="Ano de Início"
-                            name="ano-inicio"
-                            type="number"
-                            color={props.defaultColor}
-                            margin="10px 0"
-                            required="false"
-                            placeholder="Ex.: 2028"
-                        />
-                        <InputText
-                            label="Ano de Formação"
-                            name="ano-formacao"
-                            type="number"
-                            color={props.defaultColor}
-                            margin="10px 0"
-                            required="false"
-                            placeholder="Ex.: 2028"
-                        />
-                    </SectionsInput>
-                    <BtnNewSecInput>+ adicionar formação</BtnNewSecInput>
-                </div>
-
-                <div>
-                    <SectionsInput>
-                        <InputText
-                            label="Empresa"
-                            name="empresa"
-                            type="text"
-                            color={props.defaultColor}
-                            margin="10px 0"
-                            required="false"
-                            placeholder="Ex.: Casas Bahia"
-                        />
-                        <InputText
-                            label="Cargo"
-                            name="cargo"
-                            type="text"
-                            color={props.defaultColor}
-                            margin="10px 0"
-                            required="false"
-                            placeholder="Ex.: Desenvolvedor Sênior"
-                        />
-                        <InputText
-                            label="Ano de Início"
-                            name="ano-inicio"
-                            type="number"
-                            color={props.defaultColor}
-                            margin="10px 0"
-                            required="false"
-                            placeholder="Ex.: 2028"
-                        />
-                        <InputText
-                            label="Ano de Saída ⓘ"
-                            name="ano-formacao"
-                            type="number"
-                            color={props.defaultColor}
-                            margin="10px 0"
-                            required="false"
-                            placeholder="Ex.: 2028"
-                        />
-                    </SectionsInput>
-                    <BtnNewSecInput>+ adicionar experiência</BtnNewSecInput>
-                </div>
 
                 <DoubleInput>
                     <div></div>
