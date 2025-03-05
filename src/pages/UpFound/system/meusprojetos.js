@@ -1,3 +1,4 @@
+import { useState } from "react";
 import MyProjectsUpFound from "../../../components/System/MyProjectsUpFound";
 import Navbar from "../../../components/System/Navbar";
 import { navItemsUpFound } from "../../../components/System/Navbar/navItems";
@@ -7,10 +8,14 @@ import { InsideSystemContainer, SystemContainer } from "../../../components/Syst
 const navItems = navItemsUpFound;
 
 const System = () => {
+    const [navStatus, setNavStatus] = useState('close');
+    
     return (
         <SystemContainer>
             <InsideSystemContainer>
                 <Navbar 
+                    navStatus={navStatus}
+                    setNavStatus={setNavStatus}
                     navItems={navItems} 
                     active="Meus Projetos"
                     imgLogo="first-logo-for-devs"
@@ -21,6 +26,7 @@ const System = () => {
                     <Subheader
                         defaultColor="var(--color-sky-2)"
                         surname="Dev"
+                        setNavStatus={setNavStatus}
                     />
                     <MyProjectsUpFound
                         defaultColor="var(--color-sky-2)"

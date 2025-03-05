@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const NavbarContainer = styled.nav`
     width: 300px;
-    min-width: max-content;
+    min-width: 300px;
     min-height: 100%;
     position: fixed;
     top: 0;
@@ -130,22 +130,22 @@ const useWindowWidth = () => {
 
     return width;
 };
-const Navbar = (props) => {
+const Navbar = ({ navStatus, setNavStatus, imgLogo, navItems, defaultColor, active }) => {
     const navigate = useNavigate();
-
-    const [navStatus, setNavStatus] = useState('close');
     const width = useWindowWidth();
 
     useEffect(() => {
-        if (width > 999) {
-            setNavStatus('open'); // Mantém a navbar aberta em telas grandes
+        if (width > 1200) {
+            setNavStatus('open');
+        } else {
+            setNavStatus('close');
         }
-    }, [width]);
+    }, [width, setNavStatus]);
 
     return (
         <NavbarContainer className={navStatus === 'open' ? 'nav-open' : 'nav-close'}>
             <ImagesContainer>
-                <ImgLogo src={`/img/iv/${props.imgLogo}.png`} alt="Logo da UpFind" />
+                <ImgLogo src={`/img/iv/${imgLogo}.png`} alt="Logo da UpFind" />
                 <ImgClose
                     src="/img/icons/close.svg"
                     alt="Ícone em X para fechar navbar"
@@ -153,14 +153,14 @@ const Navbar = (props) => {
                 />
             </ImagesContainer>
 
-            {props.navItems.map(sec => (
+            {navItems.map(sec => (
                 <TopicsSection key={sec.key}>
                     <TopicsSectionTitle>{sec.secNavTitle}</TopicsSectionTitle>
-                    <TopicsList $defaultColor={props.defaultColor}>
+                    <TopicsList $defaultColor={defaultColor}>
                         {sec.secNavItem.map((item, index) => (
                             <li 
                                 key={"item-" + index} 
-                                className={`${item.text === props.active ? 'active' : ''}`}
+                                className={`${item.text === active ? 'active' : ''}`}
                                 onClick={() => navigate( item.router ) }    
                             >
                                 <span>

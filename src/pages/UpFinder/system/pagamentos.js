@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "../../../components/System/Navbar";
 import { navItemsUpFinder } from "../../../components/System/Navbar/navItems";
 import PaymentsHistoric from "../../../components/System/PaymentsHistoric";
@@ -7,10 +8,14 @@ import { InsideSystemContainer, SystemContainer } from "../../../components/Syst
 const navItems = navItemsUpFinder;
 
 const System = () => {
+    const [navStatus, setNavStatus] = useState('close');
+    
     return (
         <SystemContainer>
             <InsideSystemContainer>
                 <Navbar 
+                    navStatus={navStatus}
+                    setNavStatus={setNavStatus}
                     navItems={navItems} 
                     active="Histórico de Pagamentos"
                     imgLogo="first-logo"
@@ -21,6 +26,7 @@ const System = () => {
                     <Subheader
                         defaultColor="var(--color-sky-1)"
                         surname="UpFinder"
+                        setNavStatus={setNavStatus}
                     />
                     <PaymentsHistoric />
                 </div>

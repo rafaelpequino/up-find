@@ -91,13 +91,13 @@ const BtnOpenNav = styled.div`
     }
 `
 
-const Subheader = ({ defaultColor, surname, toggleNav }) => {
+const Subheader = ({ defaultColor, surname, setNavStatus }) => {
     return (
         <SubheaderContainer
             style={{ backgroundColor: defaultColor }}
         >
             <Options>
-                <BtnOpenNav onClick={toggleNav}>
+                <BtnOpenNav onClick={() => setNavStatus('open')}>
                     <div></div>
                     <div></div>
                     <div></div>
