@@ -1,8 +1,9 @@
 import ProjectCard from "../ProjectCard";
 import { Subtitle } from '../../Global/Subtitle'
+import { Button } from '../../Global/Button'
 import { SectionContainer } from '../SectionContainer';
 
-const MyProjects = () => {
+const MyProjects = ({ projectsList, btnNewProject }) => {
     return (
         <main>
             <SectionContainer>
@@ -16,11 +17,22 @@ const MyProjects = () => {
                     Meus projetos
                 </Subtitle>
 
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
+                {btnNewProject && (
+                    <Button
+                        $defaultMargin = "20px 0"
+                        setBorderColor="var(--color-sky-1)"
+                        setBackgroundColor="var(--color-sky-1)"
+                    >
+                        + Novo projeto
+                    </Button>
+                )}
+
+                {projectsList.map(project => (
+                    <ProjectCard 
+                        project={project}
+                    />
+
+                ))}
             </SectionContainer>
 
         </main>

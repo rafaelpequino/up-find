@@ -48,19 +48,21 @@ const PriorityInfo = styled.div`
     & div {
         width: 30px;
         height: 30px;
-        background-color: #CC0909;
         border-radius: 50%
     }
 `
 
-const ProjectCard = () => {
+const ProjectCard = ({ project }) => {
+
+    const priorityColor = project.priority === "Alta" ? "#CC0909" : project.priority === "Baixa" ? "#138f03" : "#f5e042"
+
     return (
         <CardContainer>
 
             <InfoSide>
                 <PriorityInfo>
-                    <div></div>
-                    Alta prioridade
+                    <div style={{ backgroundColor: priorityColor }}></div>
+                    { project.priority } prioridade
                 </PriorityInfo>
 
                 <Paragraph
@@ -69,7 +71,7 @@ const ProjectCard = () => {
                     $size="12px"
                     $opacity=".7"
                 >
-                    Website
+                    { project.type }
                 </Paragraph>
 
                 <Paragraph
@@ -77,7 +79,7 @@ const ProjectCard = () => {
                     $margin="0 0 15px"
                     $size="20px"
                 >
-                    Site para loja de roupas femininas
+                    { project.title }
                 </Paragraph>
 
                 <Paragraph
@@ -86,7 +88,7 @@ const ProjectCard = () => {
                     $size="14px"
                     $opacity=".7"
                 >
-                    Preciso que seja criado do 0 um site criativo, inovador, com a essência da minha empresa
+                    { project.desc }
                 </Paragraph>
             </InfoSide>
         </CardContainer>
