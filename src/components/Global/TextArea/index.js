@@ -17,7 +17,7 @@ const TextAreaContainer = styled.div`
         padding: 12px 20px;
         border-radius: 10px;
         font-size: 14px;
-        background-color:rgb(36, 36, 36);
+        background-color:var(--color-overlay);
         border: none;
         color: var(--color-white);
     }

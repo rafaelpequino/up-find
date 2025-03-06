@@ -15,6 +15,7 @@
   --color-stone: #A9A9A9; 
   --color-white: #ffffff; 
   --color-black: #000000; 
+  --color-overlay: rgb(36, 36, 36);
 }
 
 @media (max-width: 320px) {
