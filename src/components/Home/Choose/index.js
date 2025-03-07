@@ -62,7 +62,7 @@ const Choose = () => {
     const navigate = useNavigate();
     return (
         <ChooseContainer>
-            <UpFinderContainer onClick={() => navigate('/upfinder')}>
+            <UpFinderContainer onClick={() => navigate('/UpFinder')}>
                 <Title 
                     $color="var(--color-white)" 
                 >
@@ -77,7 +77,7 @@ const Choose = () => {
                 </Paragraph>
             </UpFinderContainer>
 
-            <UpFoundContainer onClick={() => navigate('/upfound')}>
+            <UpFoundContainer onClick={() => navigate('/UpFound')}>
                 <Title 
                     $color="var(--color-white)" 
                 >

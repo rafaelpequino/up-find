@@ -140,7 +140,7 @@ const ProjectContainer = (props) => {
                 )}
 
                 {props.projectsList.map(proj => (
-                    <Project onClick={() => navigate('/upfinder/system/projeto')}>
+                    <Project onClick={() => navigate('/UpFinder/system/projeto')}>
                         <ProjectImg>
                             <img src={proj.imgName} alt="Imagem capa do serviço" />
                         </ProjectImg>

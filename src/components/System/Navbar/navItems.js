@@ -52,7 +52,7 @@ export const navItemsUpFound = [
             {
                 icon: "list",
                 text: "Dados Profissionais",
-                router: "/Upfound/system/dadosprofissionais"
+                router: "/UpFound/system/dadosprofissionais"
             },
             {
                 icon: "folder",

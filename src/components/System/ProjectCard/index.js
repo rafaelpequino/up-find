@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Paragraph } from "../../Global/Paragraph";
+import { useNavigate } from "react-router-dom";
 
 const CardContainer = styled.div`
     width: 100%;
@@ -53,11 +54,11 @@ const PriorityInfo = styled.div`
 `
 
 const ProjectCard = ({ project }) => {
-
+    const navigate = useNavigate();
     const priorityColor = project.priority === "Alta" ? "#CC0909" : project.priority === "Baixa" ? "#138f03" : "#f5e042"
 
     return (
-        <CardContainer>
+        <CardContainer onClick={() => {navigate('/UpFinder/system/projeto')}}>
 
             <InfoSide>
                 <PriorityInfo>

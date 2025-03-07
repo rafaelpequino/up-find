@@ -32,63 +32,63 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
-    path: '/upfinder',
+    path: '/UpFinder',
     element: <UpFinder />
   },
   {
-    path: '/upfinder/login',
+    path: '/UpFinder/login',
     element: <LoginUpFinder />,
   },
   {
-    path: '/upfound',
+    path: '/UpFound',
     element: <UpFound />,
   },
   {
-    path: '/upfound/login',
+    path: '/UpFound/login',
     element: <LoginUpFound />,
   },
   {
-    path: '/upfinder/cadastro',
+    path: '/UpFinder/cadastro',
     element: <CadastroUpFinder />,
   },
   {
-    path: '/upfound/cadastro',
+    path: '/UpFound/cadastro',
     element: <CadastroUpFound />,
   },
   {
-    path: '/upfinder/system',
+    path: '/UpFinder/system',
     element: <SystemUpFinder />,
   },
   {
-    path: '/upfinder/system/meusprojetos',
+    path: '/UpFinder/system/meusprojetos',
     element: <MeusProjetosUpFinder />,
   },
   {
-    path: '/upfinder/system/pagamentos',
+    path: '/UpFinder/system/pagamentos',
     element: <PagamentosUpFinder />
   },
   {
-    path: '/upfinder/system/projeto',
+    path: '/UpFinder/system/projeto',
     element: <ProjetoUpFinder />
   },
   {
-    path: '/upfound/system',
+    path: '/UpFound/system',
     element: <SystemUpFound />
   },
   {
-    path: '/upfound/system/dadosprofissionais',
+    path: '/UpFound/system/dadosprofissionais',
     element: <DadosProfissionaisUpFound />
   },
   {
-    path: '/upfound/system/meusprojetos',
+    path: '/UpFound/system/meusprojetos',
     element: <MeusProjetosUpFound />
   },
   {
-    path: '/upfound/system/buscarprojetos',
+    path: '/UpFound/system/buscarprojetos',
     element: <BuscarProjetosUpFound />
   },
   {
-    path: '/upfound/system/financeiro',
+    path: '/UpFound/system/financeiro',
     element: <FinanceiroUpFound />
   }
 ]);

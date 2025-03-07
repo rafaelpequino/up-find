@@ -6,7 +6,7 @@ const Login = () => {
             defaultColor="var(--color-sky-1)"
             username="UpFinder"
             logo="first-logo"
-            navigate="/upfinder/"
+            navigate="/UpFinder/"
         />
     )
 }

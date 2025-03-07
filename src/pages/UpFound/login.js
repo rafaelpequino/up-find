@@ -7,7 +7,7 @@ const Login = () => {
             username="UpFound"
             logo="first-logo-for-devs"
             shadowColor="rgba(121, 20, 141, 0.1)"
-            navigate="/upfound/"
+            navigate="/UpFound/"
         />
     )
 }

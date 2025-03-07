@@ -148,7 +148,7 @@ const Project = () => {
     return (
         <main>
             <SectionContainer>
-                <BtnBack onClick={() => navigate('/upfinder/system/meusprojetos')}>
+                <BtnBack onClick={() => navigate('/UpFinder/system/meusprojetos')}>
                     <img src="/img/icons/back.svg" alt="Ícone de voltar" />
                     Voltar
                 </BtnBack>
