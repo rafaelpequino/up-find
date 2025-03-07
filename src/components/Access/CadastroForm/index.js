@@ -53,7 +53,7 @@ const CadastroForm = (props) => {
     return (
         <CadastroContainer>
             <BoxImgLogo src={'/img/iv/' + props.logo + '.png'} alt="Logo da UpFind" />
-            <BoxCadastro style={{ boxShadow: `0 0 60px ${props.shadowColor}` }}>
+            <BoxCadastro>
                 <Subtitle
                     $color="var(--color-white)"
                     $opacity=".2"
@@ -125,7 +125,7 @@ const CadastroForm = (props) => {
                     $linkColor={props.defaultColor}
                     $margin="10px auto"
                 >
-                    Já possui uma conta? <button onClick={() => navigate(props.navigate + 'login')}>Entre</button>
+                    Já possui uma conta? <button onClick={() => navigate(props.navigate + 'login')} style={{cursor: 'pointer'}}>Entre</button>
                 </Paragraph>
             </BoxCadastro>
         </CadastroContainer>
