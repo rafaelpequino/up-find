@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import App from './App';
 import UpFinder from './pages/UpFinder';
 import UpFound from './pages/UpFound';
@@ -26,77 +26,36 @@ import MeusProjetosUpFound from './pages/UpFound/system/meusprojetos';
 import BuscarProjetosUpFound from './pages/UpFound/system/buscarprojetos';
 import FinanceiroUpFound from './pages/UpFound/system/financeiro';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />
-  },
-  {
-    path: '/UpFinder',
-    element: <UpFinder />
-  },
-  {
-    path: '/UpFinder/login',
-    element: <LoginUpFinder />,
-  },
-  {
-    path: '/UpFound',
-    element: <UpFound />,
-  },
-  {
-    path: '/UpFound/login',
-    element: <LoginUpFound />,
-  },
-  {
-    path: '/UpFinder/cadastro',
-    element: <CadastroUpFinder />,
-  },
-  {
-    path: '/UpFound/cadastro',
-    element: <CadastroUpFound />,
-  },
-  {
-    path: '/UpFinder/system',
-    element: <SystemUpFinder />,
-  },
-  {
-    path: '/UpFinder/system/meusprojetos',
-    element: <MeusProjetosUpFinder />,
-  },
-  {
-    path: '/UpFinder/system/pagamentos',
-    element: <PagamentosUpFinder />
-  },
-  {
-    path: '/UpFinder/system/projeto',
-    element: <ProjetoUpFinder />
-  },
-  {
-    path: '/UpFound/system',
-    element: <SystemUpFound />
-  },
-  {
-    path: '/UpFound/system/dadosprofissionais',
-    element: <DadosProfissionaisUpFound />
-  },
-  {
-    path: '/UpFound/system/meusprojetos',
-    element: <MeusProjetosUpFound />
-  },
-  {
-    path: '/UpFound/system/buscarprojetos',
-    element: <BuscarProjetosUpFound />
-  },
-  {
-    path: '/UpFound/system/financeiro',
-    element: <FinanceiroUpFound />
-  }
-]);
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <Routes>
+
+        <Route path="/" element={<App />} />
+
+        <Route path="/UpFinder" element={<UpFinder />} />
+        <Route path="/UpFinder/login" element={<LoginUpFinder />} />
+        <Route path="/UpFinder/cadastro" element={<CadastroUpFinder />} />
+
+        <Route path="/UpFound" element={<UpFound />} />
+        <Route path="/UpFound/login" element={<LoginUpFound />} />
+        <Route path="/UpFound/cadastro" element={<CadastroUpFound />} />
+
+        <Route path="/UpFinder/system" element={<SystemUpFinder />} />
+        <Route path="/UpFinder/system/meusprojetos" element={<MeusProjetosUpFinder />} />
+        <Route path="/UpFinder/system/pagamentos" element={<PagamentosUpFinder />} />
+        <Route path="/UpFinder/system/projeto" element={<ProjetoUpFinder />} />
+
+        <Route path="/UpFound/system" element={<SystemUpFound />} />
+        <Route path="/UpFound/system/dadosprofissionais" element={<DadosProfissionaisUpFound />} />
+        <Route path="/UpFound/system/meusprojetos" element={<MeusProjetosUpFound />} />
+        <Route path="/UpFound/system/buscarprojetos" element={<BuscarProjetosUpFound />} />
+        <Route path="/UpFound/system/financeiro" element={<FinanceiroUpFound />} />
+        
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
